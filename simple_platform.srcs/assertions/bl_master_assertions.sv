@@ -3,18 +3,24 @@ checker checker0(clk, wb_rst, wb_cyc, wb_stb,busy,request,write,ready_from_bus,e
     clocking mock @(posedge clk);
 
         property master_read_write_transaction;
-            ((!wb_rst && !busy) ##1 busy) |-> (busy until (ready_from_bus || error_from_bus));
+            ((request && !busy) ##1 busy) |-> (
+                (busy [*0:$] ##1 ready_from_bus ##1 !request [->1] ##1 (!busy && !ready_from_bus))
+                /*
+                or
+                ((busy [->1] ##1 (error_from_bus)) |-> (!request ##1 (!busy && !error_from_bus)))
+                */
+            );
         endproperty
+
 
     endclocking
 
    int pass_count=0;
    int fail_count=0;
-   int tt[2:0];
+
 
    assert property (mock.master_read_write_transaction)begin
        pass_count++;
-       tt[2]++;
    end
    else begin
        fail_count++;

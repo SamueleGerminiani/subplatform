@@ -10,27 +10,27 @@ z2
 cModel Technology
 Z0 d/home/sam/simple_platform/questa.simulation
 T_opt
-!s110 1578590608
-VEgoFdTTXRX8ddXh_]CTKi3
+!s110 1578668061
+VU5;:Y`fVbco6GKGUU491z3
 04 4 4 work sim1 fast 0
-=1-000ae431a4f1-5e17618f-e69dd-587d
+=1-000ae431a4f1-5e18901c-dee53-2e3e
 o-quiet -auto_acc_if_foreign -work work -suppress vopt-13314,vsim-4075
 Z1 tCvgOpt 0
 n@_opt
 OL;O;2019.4;69
 Xassertions
 Z2 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-Z3 !s110 1578590606
-V<mjARF?>Y;`a:7Dn?aCkW3
+Z3 !s110 1578668059
+V>TkoM;_WPT;DkI78hNOLP1
 r1
 !s85 0
 !i10b 1
-!s100 ;36?HoNQi2oJ2]i7FD7:U3
-I<mjARF?>Y;`a:7Dn?aCkW3
+!s100 9AE=jz`7EUPl0l2lAQKT>3
+I>TkoM;_WPT;DkI78hNOLP1
 !i103 1
 S1
 R0
-w1578590605
+w1578668056
 Z4 8../simple_platform.srcs/sources_1/new/camellia_wrapper.v
 Z5 F../simple_platform.srcs/sources_1/new/camellia_wrapper.v
 Z6 8../simple_platform.srcs/sources_1/new/core_wrapper.v
@@ -69,15 +69,15 @@ F../simple_platform.srcs/assertions/transmitter_assertions.sv
 L0 2
 Z28 OL;L;2019.4;69
 31
-Z29 !s108 1578590606.000000
-Z30 !s107 ../simple_platform.srcs/sources_1/new/../../assertions/bl_slave_1_assertions.sv|../simple_platform.srcs/sources_1/new/../../assertions/bl_slave_0_assertions.sv|../simple_platform.srcs/sources_1/new/../../assertions/transmitter_assertions.sv|../simple_platform.srcs/sources_1/new/../../assertions/cammelia_assertions.sv|../simple_platform.srcs/assertions/transmitter_assertions.sv|../simple_platform.srcs/assertions/cammelia_assertions.sv|../simple_platform.srcs/assertions/bl_slave_1_assertions.sv|../simple_platform.srcs/assertions/bl_slave_0_assertions.sv|../simple_platform.srcs/assertions/bl_master_assertions.sv|../simple_platform.srcs/sim_1/new/sim1.v|../simple_platform.srcs/sources_1/imports/platform/camellia.v|../simple_platform.srcs/sources_1/new/simple_platform.sv|../simple_platform.srcs/sources_1/new/buslayer_slave.sv|../simple_platform.srcs/sources_1/new/buslayer_master.sv|../simple_platform.srcs/sources_1/new/wishbone_bus_selector.v|../simple_platform.srcs/sources_1/new/wishbone_bus.v|../simple_platform.srcs/sources_1/new/syscon.v|../simple_platform.srcs/sources_1/new/serial_transmitter_wrapper.v|../simple_platform.srcs/sources_1/new/serial_transmitter.v|../simple_platform.srcs/sources_1/new/core_wrapper.v|../simple_platform.srcs/sources_1/new/camellia_wrapper.v|
+Z29 !s108 1578668059.000000
+Z30 !s107 ../simple_platform.srcs/sources_1/new/../../assertions/cammelia_assertions.sv|../simple_platform.srcs/assertions/transmitter_assertions.sv|../simple_platform.srcs/assertions/cammelia_assertions.sv|../simple_platform.srcs/assertions/bl_slave_1_assertions.sv|../simple_platform.srcs/assertions/bl_slave_0_assertions.sv|../simple_platform.srcs/assertions/bl_master_assertions.sv|../simple_platform.srcs/sim_1/new/sim1.v|../simple_platform.srcs/sources_1/imports/platform/camellia.v|../simple_platform.srcs/sources_1/new/simple_platform.sv|../simple_platform.srcs/sources_1/new/buslayer_slave.sv|../simple_platform.srcs/sources_1/new/buslayer_master.sv|../simple_platform.srcs/sources_1/new/wishbone_bus_selector.v|../simple_platform.srcs/sources_1/new/wishbone_bus.v|../simple_platform.srcs/sources_1/new/syscon.v|../simple_platform.srcs/sources_1/new/serial_transmitter_wrapper.v|../simple_platform.srcs/sources_1/new/serial_transmitter.v|../simple_platform.srcs/sources_1/new/core_wrapper.v|../simple_platform.srcs/sources_1/new/camellia_wrapper.v|
 Z31 !s90 +acc=rnbp|-dpiheader|./work/vc_hdrs.h|-ccflags|-I ./work|-sv|../simple_platform.srcs/sources_1/new/camellia_wrapper.v|../simple_platform.srcs/sources_1/new/core_wrapper.v|../simple_platform.srcs/sources_1/new/serial_transmitter.v|../simple_platform.srcs/sources_1/new/serial_transmitter_wrapper.v|../simple_platform.srcs/sources_1/new/syscon.v|../simple_platform.srcs/sources_1/new/wishbone_bus.v|../simple_platform.srcs/sources_1/new/wishbone_bus_selector.v|../simple_platform.srcs/sources_1/new/buslayer_master.sv|../simple_platform.srcs/sources_1/new/buslayer_slave.sv|../simple_platform.srcs/sources_1/new/simple_platform.sv|../simple_platform.srcs/sources_1/imports/platform/camellia.v|../simple_platform.srcs/sim_1/new/sim1.v|../firmware/sp_fw.c|-cuname|assertions|-mfcu|../simple_platform.srcs/assertions/bl_master_assertions.sv|../simple_platform.srcs/assertions/bl_slave_0_assertions.sv|../simple_platform.srcs/assertions/bl_slave_1_assertions.sv|../simple_platform.srcs/assertions/cammelia_assertions.sv|../simple_platform.srcs/assertions/transmitter_assertions.sv|
 !i113 0
 Z32 o+acc=rnbp -sv -cuname assertions -mfcu -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R1
 vbuslayer_master
 Z33 !s105 assertions
-Z34 DXx4 work 10 assertions 0 22 <mjARF?>Y;`a:7Dn?aCkW3
+Z34 DXx4 work 10 assertions 0 22 >TkoM;_WPT;DkI78hNOLP1
 R2
 R3
 !i10b 1
@@ -108,17 +108,15 @@ R34
 R2
 R3
 !i10b 1
-!s100 ac4HlNFH<M^WkejGlFSPl0
+!s100 i8<^OlQBI^il8FdDU][Rc3
 !s11b 4DWO>W5F[l9]i61kQFb7k0
-I@AcB58e^=Y7TQoo3VldSo0
+I2RRzXKNLNBm_dC?`c27A[2
 R35
 S1
 R0
-w1577192307
+w1578590928
 R20
 R21
-F../simple_platform.srcs/sources_1/new/../../assertions/bl_slave_0_assertions.sv
-F../simple_platform.srcs/sources_1/new/../../assertions/bl_slave_1_assertions.sv
 !i122 -1
 Z36 L0 25
 R28
@@ -528,13 +526,13 @@ R34
 R2
 R3
 !i10b 1
-!s100 KfnVC<Wlo<d?Gaeif7gZQ1
-!s11b KVjJbBP>g8FMim>W6kfZz1
-IcXGO@i>NPeWziYSd><CPZ1
+!s100 jFh9R4DVB=Z@E95GYPbce2
+!s11b 9aK3dOz>>iX1@7mn]ZPXT3
+Imk?noQ9iH^GkzSNVa:UL?1
 R35
 S1
 R0
-w1578568311
+w1578662078
 R6
 R7
 !i122 -1
@@ -555,16 +553,15 @@ R34
 R2
 R3
 !i10b 1
-!s100 emz;T;;<d^CS`<czYjIPk0
+!s100 9if^9^`>V7mDEDHaaBO3l0
 !s11b VGPzk3OoMU8ma]QSdT7<00
-IKPghXUka]_7CX3^oE45O=3
+Igb_eHVaEzg298AUnU2FYe2
 R35
 S1
 R0
-w1577192470
+w1578591869
 R8
 R9
-F../simple_platform.srcs/sources_1/new/../../assertions/transmitter_assertions.sv
 !i122 -1
 Z38 L0 26
 R28

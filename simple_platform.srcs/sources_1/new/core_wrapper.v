@@ -36,12 +36,10 @@ module core_wrapper(
    //===================================
 );
 
-reg [31:0] write_transaction_count=0;
-reg [31:0] read_transaction_count=0;
+reg [31:0] transaction_count=0;
 
 final begin
-$display(transactor_log, "\nwrite_transaction_count: %d\n", write_transaction_count++);
-$display(transactor_log, "\nread_transaction_count: %d\n", read_transaction_count++);
+$display(transactor_log, "\ntransaction_count: %d\n", transaction_count++);
 end
 // the function implemented in the testbench file
 import "DPI-C" context task run_testbench();
@@ -143,7 +141,7 @@ begin
         errorOut           <= {{7'b0}, {error_from_bus}};
 
         //keep track of the number of write transactions
-        write_transaction_count++;
+        transaction_count++;
 
         $fdisplay(transactor_log, 
                   "wishbone-WRITE  (STOP): time:%0t\terror:%d", 
@@ -191,7 +189,7 @@ begin
         dataOut            <= data_from_bus;
          
         //keep track of the number of write transactions
-        read_transaction_count++;
+        transaction_count++;
 
         $fdisplay(transactor_log, 
                   "wishbone-READ   (STOP): time:%0t\tdata:%x\terror:%x", 

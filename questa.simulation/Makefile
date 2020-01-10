@@ -21,7 +21,8 @@ help:
 	@echo =========================================================================================
 	@echo  " 								                                                       "
 	@echo  " USAGE: make RECEPIE|TARGET                                                            "
-	@echo  " Author: Alessandro Danese (alessandro.danese@univr.it)                                "
+	@echo  " Authors: Alessandro Danese (alessandro.danese@univr.it)                                "
+	@echo  "          Samuele Germiniani (samuele.germiniani@univr.it)                                "
 	@echo  " 								                                                       "
 	@echo  " --- RECIPES ---------------------------------------------------------------------------"
 	@echo  " simulation             => Performs: clean, compile_s, and run_s        			   "

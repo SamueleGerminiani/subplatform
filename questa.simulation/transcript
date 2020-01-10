@@ -1,5 +1,5 @@
 # vsim -quiet -suppress vopt-13314,vsim-4075 -c sim1 -do "assertion fail -r / -limit 1 sim1; run 1ms;                                   assertion report -failed -r sim1 -file fault_report.txt;   				   exit" 
-# Start time: 18:23:27 on Jan 09,2020
+# Start time: 15:54:20 on Jan 10,2020
 # ** Note: (vsim-3812) Design is being optimized...
 # //  ModelSim SE-64 2019.4 Oct 15 2019 Linux 5.0.0-37-generic
 # //
@@ -20,12 +20,9 @@
 #                                    assertion report -failed -r sim1 -file fault_report.txt
 #    				   exit
 #           2
-# write_transaction_count:       8567
-# 
-#           2
-# read_transaction_count:       6080
+# transaction_count:      14647
 # 
 # Pass       14647
 # Fail           0
-# End time: 18:23:32 on Jan 09,2020, Elapsed time: 0:00:05
+# End time: 15:54:24 on Jan 10,2020, Elapsed time: 0:00:04
 # Errors: 0, Warnings: 0, Suppressed Warnings: 4
