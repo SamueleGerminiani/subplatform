@@ -1,0 +1,1 @@
+sim1.p.core.master_interface.wb_stall 1'b1

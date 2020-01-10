@@ -1,0 +1,104 @@
+vunit vu2 (buslayer_slave) {
+    default clock = (posedge wb_clk);
+
+/*
+PSL1: assert always( done -> request );
+PSL2: assert always( !done -> !request );
+PSL3: assert always( (!done && wb_cyc) -> next[1](request) );
+PSL4: assert always( done -> next[1](!request) );
+PSL5: assert always( !wb_cyc -> next[1](!request) );
+PSL6: assert always( wb_rst -> next[1](!request) );
+PSL7: assert always( !wb_stb -> next[1](!request) );
+PSL8: assert always( request -> next[1](!request) );
+PSL9: assert always( reset -> next[1](!request) );
+PSL10: assert always( wb_ack -> next[1](!request) );
+PSL11: assert always( write -> next[1](!request) );
+PSL12: assert always( wb_rst -> reset );
+PSL13: assert always( done -> !reset );
+PSL14: assert always( wb_cyc -> !reset );
+PSL15: assert always( !wb_rst -> !reset );
+PSL16: assert always( done -> wb_ack );
+PSL17: assert always( !done -> !wb_ack );
+PSL18: assert always( (!done && wb_cyc) -> next[1](wb_ack) );
+PSL19: assert always( done -> next[1](!wb_ack) );
+PSL20: assert always( !wb_cyc -> next[1](!wb_ack) );
+PSL21: assert always( wb_rst -> next[1](!wb_ack) );
+PSL22: assert always( !wb_stb -> next[1](!wb_ack) );
+PSL23: assert always( request -> next[1](!wb_ack) );
+PSL24: assert always( reset -> next[1](!wb_ack) );
+PSL25: assert always( wb_ack -> next[1](!wb_ack) );
+PSL26: assert always( write -> next[1](!wb_ack) );
+PSL27: assert always( !wb_err );
+PSL28: assert always( !wb_stall );
+PSL29: assert always( (done && wb_we) -> write );
+PSL30: assert always( (!wb_cyc && wb_we) -> write );
+PSL31: assert always( wb_rst -> !write );
+PSL32: assert always( !wb_we -> !write );
+PSL33: assert always( reset -> !write );
+PSL34: assert always( (done && wb_we) -> next[1](write) );
+PSL35: assert always( (wb_cyc && wb_we) -> next[1](write) );
+PSL36: assert always( !wb_cyc -> next[1](!write) );
+PSL37: assert always( wb_rst -> next[1](!write) );
+PSL38: assert always( !wb_stb -> next[1](!write) );
+PSL39: assert always( !wb_we -> next[1](!write) );
+PSL40: assert always( reset -> next[1](!write) );
+*/
+
+/*
+PSL1: assert always( done -> request );
+PSL2: assert always( wb_ack -> request );
+PSL3: assert always( wb_stall -> request );
+PSL4: assert always( !wb_cyc -> !request );
+PSL5: assert always( wb_rst -> !request );
+PSL6: assert always( !wb_we -> !request );
+PSL7: assert always( reset -> !request );
+PSL8: assert always( !write -> !request );
+PSL9: assert always( wb_stb -> next[1](request) );
+PSL10: assert always( wb_stall -> next[1](request) );
+PSL11: assert always( done -> next[1](!request) );
+PSL12: assert always( !wb_cyc -> next[1](!request) );
+PSL13: assert always( wb_rst -> next[1](!request) );
+PSL14: assert always( !wb_we -> next[1](!request) );
+PSL15: assert always( reset -> next[1](!request) );
+PSL16: assert always( wb_ack -> next[1](!request) );
+PSL17: assert always( wb_rst -> reset );
+PSL18: assert always( done -> !reset );
+PSL19: assert always( wb_cyc -> !reset );
+PSL20: assert always( !wb_rst -> !reset );
+PSL21: assert always( done -> wb_ack );
+PSL22: assert always( !done -> !wb_ack );
+PSL23: assert always( !wb_err );
+PSL24: assert always( (!done && request) -> wb_stall );
+PSL25: assert always( done -> !wb_stall );
+PSL26: assert always( !wb_cyc -> !wb_stall );
+PSL27: assert always( wb_rst -> !wb_stall );
+PSL28: assert always( !wb_we -> !wb_stall );
+PSL29: assert always( !request -> !wb_stall );
+PSL30: assert always( reset -> !wb_stall );
+PSL31: assert always( wb_ack -> !wb_stall );
+PSL32: assert always( !write -> !wb_stall );
+PSL33: assert always( (!done && wb_cyc && !wb_stall) -> next[1](wb_stall) );
+PSL34: assert always( (wb_cyc && !request) -> next[1](wb_stall) );
+PSL35: assert always( (wb_cyc && !write) -> next[1](wb_stall) );
+PSL36: assert always( wb_stb -> next[1](wb_stall) );
+PSL37: assert always( done -> next[1](!wb_stall) );
+PSL38: assert always( !wb_cyc -> next[1](!wb_stall) );
+PSL39: assert always( wb_rst -> next[1](!wb_stall) );
+PSL40: assert always( !wb_we -> next[1](!wb_stall) );
+PSL41: assert always( reset -> next[1](!wb_stall) );
+PSL42: assert always( wb_ack -> next[1](!wb_stall) );
+PSL43: assert always( done -> write );
+PSL44: assert always( request -> write );
+PSL45: assert always( wb_ack -> write );
+PSL46: assert always( wb_stall -> write );
+PSL47: assert always( (wb_cyc && !request) -> !write );
+PSL48: assert always( wb_rst -> !write );
+PSL49: assert always( (wb_stb && !request) -> !write );
+PSL50: assert always( (wb_we && !request) -> !write );
+PSL51: assert always( reset -> !write );
+PSL52: assert always( done -> next[1](write) );
+PSL53: assert always( wb_cyc -> next[1](write) );
+PSL54: assert always( !wb_cyc -> next[1](!write) );
+*/
+
+}

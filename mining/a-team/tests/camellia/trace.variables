@@ -1,0 +1,9 @@
+bsy bool
+drdy bool
+dvld bool
+en bool
+encdec bool
+krdy bool
+kvld bool
+rstn bool
+

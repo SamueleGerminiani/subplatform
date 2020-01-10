@@ -1,0 +1,22 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../simple_platform.srcs/sources_1/new" --include "C:/Xilinx/Vivado/2017.4/data/xilinx_vip/include" \
+"../../../../simple_platform.srcs/sources_1/imports/platform/camellia.v" \
+
+sv xil_defaultlib  --include "../../../../simple_platform.srcs/sources_1/new" --include "C:/Xilinx/Vivado/2017.4/data/xilinx_vip/include" \
+"../../../../simple_platform.srcs/sources_1/new/camellia_wrapper.v" \
+"../../../../simple_platform.srcs/sources_1/new/core_wrapper.v" \
+"../../../../simple_platform.srcs/sources_1/new/serial_transmitter.v" \
+"../../../../simple_platform.srcs/sources_1/new/serial_transmitter_wrapper.v" \
+"../../../../simple_platform.srcs/sources_1/new/simple_platform.sv" \
+"../../../../simple_platform.srcs/sources_1/new/syscon.v" \
+"../../../../simple_platform.srcs/sources_1/new/wishbone_bus.v" \
+"../../../../simple_platform.srcs/sources_1/new/wishbone_bus_selector.v" \
+"../../../../simple_platform.srcs/sources_1/new/wishbone_master.v" \
+"../../../../simple_platform.srcs/sources_1/new/wishbone_slave.v" \
+"../../../../simple_platform.srcs/sim_1/new/sim1.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

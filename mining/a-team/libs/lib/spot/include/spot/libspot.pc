@@ -1,0 +1,12 @@
+prefix=/usr/local
+exec_prefix=/usr/local
+includedir=/usr/local/include
+libdir=/usr/local/lib
+
+Name: Spot
+Description: A library of LTL and omega-automata algorithms for model checking
+URL: https://spot.lrde.epita.fr/
+Version: 2.8.4.dev
+Cflags: -I${includedir}
+Libs: -L${libdir} -lspot
+Requires: libbddx

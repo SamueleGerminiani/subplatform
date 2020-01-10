@@ -1,0 +1,22 @@
+address[31:0] logic 32
+busy bool
+byte_sel[3:0] logic 4
+data_from_bus[31:0] logic 32
+data_to_bus[31:0] logic 32
+error_from_bus bool
+ready_from_bus bool
+request bool
+reset bool
+wb_ack bool
+wb_adr[31:0] logic 32
+wb_cyc bool
+wb_dat_i[31:0] logic 32
+wb_dat_o[31:0] logic 32
+wb_err bool
+wb_rst bool
+wb_sel[3:0] logic 4
+wb_stall bool
+wb_stb bool
+wb_we bool
+write bool
+

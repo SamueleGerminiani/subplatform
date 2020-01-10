@@ -1,0 +1,9 @@
+[submodule "libs/antlr4"]
+	path = libs/antlr4
+	url = https://github.com/antlr/antlr4.git
+[submodule "libs/spot"]
+	path = libs/spot
+	url = https://gitlab.lrde.epita.fr/spot/spot.git
+[submodule "libs/z3"]
+	path = libs/z3
+	url = https://github.com/Z3Prover/z3.git

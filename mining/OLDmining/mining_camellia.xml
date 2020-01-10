@@ -1,0 +1,33 @@
+<root>
+
+    <tracereader name="mangroveTraceReader">
+        <variables path="work/trace.variables"/>
+        <traces>
+            <trace path="work/trace.mangrove"/>
+        </traces>
+    </tracereader>
+
+    <staticanalyser name="manualAnalysis">
+        <directions>
+            <direction name="rstn"  dir="in" />
+            <direction name="en"    dir="in" />
+            <direction name="drdy"  dir="in" />
+            <direction name="krdy"  dir="in" />
+            <direction name="bsy"   dir="out" />
+            <direction name="kvld"  dir="out" />
+            <direction name="dvld"  dir="out" />
+        </directions>
+    </staticanalyser>
+
+    <propositionminer name="booleanVariables"/>
+
+    <propertyminer name="A-teamMiner">
+        <templates>
+            <template value="G( p1 -> X(p2) )" />
+        </templates>
+        <constraints maxVariables="3"/>
+    </propertyminer>
+
+    <propertyprinter name="psl"/>
+
+</root>

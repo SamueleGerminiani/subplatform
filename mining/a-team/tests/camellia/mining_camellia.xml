@@ -1,0 +1,36 @@
+<root>
+
+    <tracereader name="mangroveTraceReader">
+        <variables path="camellia/trace.variables"/>
+        <traces>
+            <trace path="camellia/trace.mangrove"/>
+        </traces>
+        <directions>
+            <direction name="rstn" dir="in"/>
+            <direction name="en" dir="in"/>
+            <direction name="drdy" dir="in"/>
+            <direction name="krdy" dir="in"/>
+            <direction name="bsy" dir="out"/>
+            <direction name="kvld" dir="out"/>
+            <direction name="dvld" dir="out"/>
+        </directions>
+    </tracereader>
+
+    <coneminer name="manualDefinition">
+    </coneMiner>
+
+    <propositionminer name="TBMiner">
+        <ConsequentTemplates>
+            <template value="p1 U p2"/>
+            <template value="p1 R p2"/>
+            <template value="p1"/>
+        </ConsequentTemplates>
+    </propositionminer>
+
+    <propertyminer name="A-teamMiner">
+        <constraints maxVariables="10"/>
+    </propertyminer>
+
+    <propertyprinter name="psl"/>
+
+</root>

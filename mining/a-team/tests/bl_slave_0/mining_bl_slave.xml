@@ -1,0 +1,57 @@
+<root>
+
+    <tracereader name="VCD_TraceReader">
+        <traceFile path="bl_slave_0/bl_slave.vcd"/>
+     </tracereader>
+
+     <!--
+    <tracereader name="mangroveTraceReader">
+        <variables path="bl_slave_0/trace.variables"/>
+        <traces>
+            <trace path="bl_slave_0/trace.mangrove"/>
+        </traces>
+    </tracereader>
+     -->
+
+    <coneminer name="manualDefinition">
+        <coneOfInfluence name="cone1">
+            <directions>
+                <direction name="slave_interface.wb_cyc" dir="in"/>
+                <direction name="slave_interface.wb_stb" dir="in"/>
+                <direction name="slave_interface.wb_we" dir="in"/>
+                <direction name="slave_interface.wb_ack" dir="out"/>
+                <direction name="slave_interface.wb_err" dir="out"/>
+                <direction name="slave_interface.wb_rst" dir="in"/>
+                <direction name="slave_interface.wb_stall" dir="out"/>
+                <direction name="slave_interface.request" dir="out"/>
+                <direction name="slave_interface.write" dir="out"/>
+                <direction name="slave_interface.reset" dir="out"/>
+                <direction name="slave_interface.err" dir="in"/>
+                <direction name="slave_interface.done" dir="in"/>
+            </directions>
+            <atomicPropositions>
+                <!--
+                <atomicProposition formula="wb_cyc && wb_stb" dir="out"/>
+                <atomicProposition formula="reset || !wb_stb" dir="write"/>
+                -->
+            </atomicPropositions>
+        </coneOfInfluence>
+    </coneminer>
+
+    <propositionminer name="TBMiner">
+        <ConsequentTemplates>
+            <template value="p1 U p2"/>
+            <template value="p1 R p2"/>
+            <template value="p1"/>
+
+
+        </ConsequentTemplates>
+    </propositionminer>
+
+    <propertyminer name="A-teamMiner">
+        <constraints maxVariables="1"/>
+    </propertyminer>
+
+    <propertyprinter name="psl"/>
+
+</root>

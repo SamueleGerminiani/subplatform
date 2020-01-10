@@ -1,0 +1,13 @@
+data_to_send[7] bool
+data_to_send[6] bool
+data_to_send[5] bool
+data_to_send[4] bool
+data_to_send[3] bool
+data_to_send[2] bool
+data_to_send[1] bool
+data_to_send[0] bool
+done bool
+rst bool
+send bool
+val bool
+

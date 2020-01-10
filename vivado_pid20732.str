@@ -1,0 +1,123 @@
+/*
+
+Xilinx Vivado v2017.4.1 (64-bit) [Major: 2017, Minor: 4]
+SW Build: 2117270 on Tue Jan 30 15:32:00 MST 2018
+IP Build: 2095745 on Tue Jan 30 17:13:15 MST 2018
+
+Process ID: 20732
+License: Customer
+
+Current time: 	Wed Nov 28 09:54:01 CET 2018
+Time zone: 	Central European Time (Europe/Berlin)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1707x960
+Screen resolution (DPI): 96
+Available screens: 2
+Available disk space: 308 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2017.4/tps/win64/jre
+JVM executable location: 	C:/Xilinx/Vivado/2017.4/tps/win64/jre/bin/java.exe
+
+User name: 	danes
+User home directory: C:/Users/danes
+User working directory: C:/Users/danes/Documents/repository/simple_platform
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2017.4
+RDI_DATADIR: C:/Xilinx/Vivado/2017.4/data
+RDI_BINDIR: C:/Xilinx/Vivado/2017.4/bin
+
+Vivado preferences file location: C:/Users/danes/AppData/Roaming/Xilinx/Vivado/2017.4/vivado.xml
+Vivado preferences directory: C:/Users/danes/AppData/Roaming/Xilinx/Vivado/2017.4/
+Vivado layouts directory: C:/Users/danes/AppData/Roaming/Xilinx/Vivado/2017.4/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2017.4/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/danes/Documents/repository/simple_platform/vivado.log
+Vivado journal file location: 	C:/Users/danes/Documents/repository/simple_platform/vivado.jou
+Engine tmp dir: 	C:/Users/danes/Documents/repository/simple_platform/.Xil/Vivado-20732-DESKTOP-CDEI5N7
+
+GUI allocated memory:	184 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 555 MB
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: C:\Users\danes\Documents\repository\simple_platform\simple_platform.xpr. Version: Vivado v2017.4.1 
+// bs (cj):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// [GUI Memory]: 77 MB (+78650kb) [00:00:07]
+// [Engine Memory]: 529 MB (+403347kb) [00:00:07]
+// Tcl Message: open_project C:/Users/danes/Documents/repository/simple_platform/simple_platform.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/danes/Documents/repository/simple_platform/simple_platform.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 562 MB. GUI used memory: 41 MB. Current time: 11/28/18 9:54:01 AM CET
+// [Engine Memory]: 569 MB (+13819kb) [00:00:12]
+// Project name: simple_platform; location: C:/Users/danes/Documents/repository/simple_platform; part: xc7z020clg400-1
+dismissDialog("Open Project"); // bs (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 143 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 7); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 8, true); // B (D, cj) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 8); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, sim1 (sim1.v)]", 10, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, sim1 (sim1.v), slave_1 : serial_transmitter_wrapper (serial_transmitter_wrapper.v)]", 13, true, false, false, false, false, true); // B (D, cj) - Double Click - Node
+// Elapsed time: 12 seconds
+selectCodeEditor("sim1.v", 94, 350); // cd (w, cj)
+selectCodeEditor("sim1.v", 108, 366); // cd (w, cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 29 seconds
+selectCodeEditor("sim1.v", 447, 523); // cd (w, cj)
+selectCodeEditor("sim1.v", 117, 286); // cd (w, cj)
+selectCodeEditor("sim1.v", 103, 196); // cd (w, cj)
+selectCodeEditor("sim1.v", 112, 245); // cd (w, cj)
+selectCodeEditor("sim1.v", 211, 281); // cd (w, cj)
+selectCodeEditor("sim1.v", 199, 500); // cd (w, cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 86 MB (+4664kb) [00:04:28]
+// Elapsed time: 52 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, wishbone_bus (wishbone_bus.v)]", 5, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, wishbone_bus (wishbone_bus.v)]", 5, false, false, false, false, false, true); // B (D, cj) - Double Click
+// [Engine Memory]: 597 MB (+181kb) [00:04:31]
+// Elapsed time: 10 seconds
+selectCodeEditor("wishbone_bus.v", 466, 552); // cd (w, cj)
+// Elapsed time: 42 seconds
+selectCodeEditor("wishbone_bus.v", 394, 356); // cd (w, cj)
+selectCodeEditor("wishbone_bus.v", 377, 381); // cd (w, cj)
+// [GUI Memory]: 91 MB (+668kb) [00:05:43]
+// HMemoryUtils.trashcanNow. Engine heap size: 604 MB. GUI used memory: 45 MB. Current time: 11/28/18 10:00:01 AM CET
+// Elapsed time: 80 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_HELP, "Help"); // U (q, cj)
+selectMenu(PAResourceItoN.MainMenuMgr_DESIGN_HUBS, "Design Hubs"); // Z (cj)
+selectMenuItem(PAResourceCommand.PACommandNames_ABOUT, "About Vivado..."); // ac (cj)
+dismissMenu(PAResourceItoN.MainMenuMgr_HELP, "Help"); // U (q, cj)
+// Run Command: PAResourceCommand.PACommandNames_ABOUT
+// a (cj): About Vivado: addNotify

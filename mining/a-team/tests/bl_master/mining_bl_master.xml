@@ -1,0 +1,49 @@
+<root>
+    <tracereader name="mangroveTraceReader">
+        <vcdParserConfig>
+            <clockSignal name="wb_clk"/>
+            <splitSignals value="No"/>
+            <addModulePathToVariables value="No"/>
+            <convertSingleBitLogicToBool value="Yes"/>
+        </vcdParserConfig>
+    </tracereader>
+
+    <coneminer name="manualDefinition">
+        <coneOfInfluence name="ManualAnalysis">
+            <atomicPropositions>
+                <atomicProposition formula="wb_cyc"   dir="out" />
+                <atomicProposition formula="wb_stb"   dir="out" />
+                <atomicProposition formula="wb_we"    dir="out" />
+                <atomicProposition formula="wb_ack"   dir="in" />
+                <atomicProposition formula="wb_err"   dir="in" />
+                <atomicProposition formula="wb_rst"   dir="in" />
+                <atomicProposition formula="wb_stall" dir="in" />
+                <atomicProposition formula="request"  dir="in" />
+                <atomicProposition formula="write"    dir="in" />
+                <atomicProposition formula="busy"     dir="out" />
+                <atomicProposition formula="reset"    dir="out" />
+                <atomicProposition formula="ready_from_bus" dir="out" />
+                <atomicProposition formula="error_from_bus" dir="out" />
+            </atomicPropositions>
+        </coneOfInfluence>
+    </coneminer>
+
+    <!-- 
+        The template is "always(antecedent -> consequent)"
+        The antecedent is generated automatically
+    -->
+    <propositionminer name="TBMiner">
+        <ConsequentTemplates>
+            <template value="p1"/>
+         </ConsequentTemplates>
+    </propositionminer>
+
+    <propertyminer name="A-teamMiner">
+         <constraints maxVariables="10"/>
+    </propertyminer>
+
+    <propertyprinter name="sva">
+        <generateChecker value="Yes" name="buslayer_master"/>
+    </propertyprinter>
+
+</root>

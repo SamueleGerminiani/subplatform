@@ -1,0 +1,65 @@
+# //  Questa Sim-64
+# //  Version 10.7c win64 Aug 18 2018
+# //
+# //  Copyright 1991-2018 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do {sim1_simulate.do}
+# vsim -lib xil_defaultlib sim1_opt 
+# Start time: 21:15:46 on Jan 13,2019
+# Loading C:/Users/danes/AppData/Local/Temp\danes@DESKTOP-CDEI5N7_dpi_22052\win64_gcc-6.2.0\export_tramp.dll
+# Loading sv_std.std
+# Loading work.sim1(fast)
+# Loading work.simple_platform(fast)
+# Loading work.syscon(fast)
+# Loading work.camellia_wrapper(fast)
+# Loading work.buslayer_slave(fast)
+# Loading work.camellia(fast)
+# Loading work.Camellia_sequencer(fast)
+# Loading work.Camellia_key_scheduler(fast)
+# Loading work.Camellia_randomize(fast)
+# Loading work.Camellia_f_func(fast)
+# Loading work.Camellia_sbox1(fast)
+# Loading work.Camellia_sbox2(fast)
+# Loading work.Camellia_sbox3(fast)
+# Loading work.Camellia_sbox4(fast)
+# Loading work.Camellia_p_func(fast)
+# Loading work.Camellia_fl(fast)
+# Loading work.Camellia_fl_plus(fast)
+# Loading work.Camellia_fl_minus(fast)
+# Loading work.serial_transmitter_wrapper(fast)
+# Loading work.serial_transmitter(fast)
+# Loading work.core_wrapper_v_unit(fast)
+# Loading work.core_wrapper(fast)
+# Loading work.buslayer_master(fast)
+# Loading work.wishbone_bus(fast)
+# Loading work.wishbone_bus_selector(fast)
+# Loading work.glbl(fast)
+# ** Note: (vsim-7082) For C/C++ auto compile, choosing compiler C:/Xilinx/Vivado/2017.4\tps\mingw\6.2.0\win64.o\nt\bin\gcc.exe set from the PATH environment variable.
+# Compiling C:/Users/danes/AppData/Local/Temp\danes@DESKTOP-CDEI5N7_dpi_22052\win64_gcc-6.2.0\exportwrapper.c
+# Loading C:/Users/danes/AppData/Local/Temp\danes@DESKTOP-CDEI5N7_dpi_22052\win64_gcc-6.2.0\vsim_auto_compile.dll
+# ** Warning: (vsim-3770) Failed to find user specified function 'run_testbench' in DPI C/C++ source files.
+#    Time: 0 ps  Iteration: 0  Region: /core_wrapper_v_unit File: ../../../../simple_platform.srcs/sources_1/new/core_wrapper.v
+# 1
+# 1
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: danes  Hostname: DESKTOP-CDEI5N7  ProcessID: 15520
+#           Attempting to use alte# End time: 21:16:39 on Jan 13,2019, Elapsed time: 0:11:47
+# Errors: 3, Warnings: 1
+ vsim.wlf
+#           Using alternate file: ./wlft266912
+# ** Error: (vish-4014) No objects found matching '*'.
+# Error in macro ./sim1_wave.do line 9
+# (vish-4014) No objects found matching '*'.
+#     while executing
+# "add wave *"
+# End time: 21:16:19 on Jan 13,2019, Elapsed time: 0:00:33
+# Errors: 3, Warnings: 3

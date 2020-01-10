@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2017.4.1 (64-bit)
+# SW Build 2117270 on Tue Jan 30 15:32:00 MST 2018
+# IP Build 2095745 on Tue Jan 30 17:13:15 MST 2018
+# Start of session at: Mon Nov 26 13:59:59 2018
+# Process ID: 21676
+# Current directory: C:/Users/danes/Documents/repository/simple_platform
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1628 C:\Users\danes\Documents\repository\simple_platform\simple_platform.xpr
+# Log file: C:/Users/danes/Documents/repository/simple_platform/vivado.log
+# Journal file: C:/Users/danes/Documents/repository/simple_platform\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/danes/Documents/repository/simple_platform/simple_platform.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/danes/Documents/vivado17_projects/simple_platform' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:05 . Memory (MB): peak = 782.188 ; gain = 92.203
+update_compile_order -fileset sources_1
+close [ open C:/Users/danes/Documents/repository/simple_platform/simple_platform.srcs/sources_1/new/wishbone_bus.v w ]
+add_files C:/Users/danes/Documents/repository/simple_platform/simple_platform.srcs/sources_1/new/wishbone_bus.v
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 26 18:34:06 2018...
