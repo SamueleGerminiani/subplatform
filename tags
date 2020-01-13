@@ -19283,7 +19283,6 @@ f_func_out	simple_platform.srcs/sources_1/imports/platform/camellia.v	/^  wire [
 f_max	mining/a-team/libs/lib/spot/include/spot/misc/minato.hh	/^      bdd f_min, f_max;$/;"	m	struct:spot::minato_isop::local_vars	typeref:typename:bdd
 f_min	mining/a-team/libs/lib/spot/include/spot/misc/minato.hh	/^      bdd f_min, f_max;$/;"	m	struct:spot::minato_isop::local_vars	typeref:typename:bdd
 failOrAccept	mining/a-team/libs/lib/antlr4/include/runtime/Cpp/runtime/src/atn/LexerATNSimulator.cpp	/^size_t LexerATNSimulator::failOrAccept(CharStream *input, ATNConfigSet *reach, size_t t) {$/;"	f	class:LexerATNSimulator	typeref:typename:size_t
-fail_count	simple_platform.srcs/assertions/bl_master_assertions.sv	/^   int fail_count=0;$/;"	r
 fair_kripke	mining/a-team/libs/lib/spot/include/spot/kripke/fairkripke.hh	/^    fair_kripke(const bdd_dict_ptr& d)$/;"	f	class:spot::fair_kripke
 fair_kripke	mining/a-team/libs/lib/spot/include/spot/kripke/fairkripke.hh	/^  class SPOT_API fair_kripke: public twa$/;"	c	namespace:spot
 fair_kripke_ptr	mining/a-team/libs/lib/spot/include/spot/kripke/fwd.hh	/^  typedef std::shared_ptr<fair_kripke> fair_kripke_ptr;$/;"	t	namespace:spot	typeref:typename:std::shared_ptr<fair_kripke>
@@ -23276,7 +23275,6 @@ partial_degeneralize	mining/a-team/libs/lib/spot/include/spot/twaalgos/degen.cc	
 partial_eval	mining/a-team/libs/lib/spot/include/spot/twa/acc.cc	/^    partial_eval(acc_cond::mark_t infinitely_often,$/;"	f	namespace:spot::__anone49ad30c0111	typeref:typename:trival	file:
 partition_t	mining/a-team/libs/lib/spot/include/spot/taalgos/minimize.cc	/^  typedef std::list<hash_set*> partition_t;$/;"	t	namespace:spot	typeref:typename:std::list<hash_set * >	file:
 partition_t	mining/a-team/libs/lib/spot/include/spot/twaalgos/minimize.cc	/^      typedef std::list<hash_set*> partition_t;$/;"	t	function:spot::__anon29bbbc1d0111::minimize_dfa	typeref:typename:std::list<hash_set * >	file:
-pass_count	simple_platform.srcs/assertions/bl_master_assertions.sv	/^   int pass_count=0;$/;"	r
 path	mining/a-team/libs/lib/spot/include/spot/twaalgos/dtbasat.cc	/^      path(int src_ref)$/;"	f	struct:spot::__anon3a720f1e0111::path	file:
 path	mining/a-team/libs/lib/spot/include/spot/twaalgos/dtbasat.cc	/^      path(int src_ref, int dst_ref)$/;"	f	struct:spot::__anon3a720f1e0111::path	file:
 path	mining/a-team/libs/lib/spot/include/spot/twaalgos/dtbasat.cc	/^    struct path$/;"	s	namespace:spot::__anon3a720f1e0111	file:

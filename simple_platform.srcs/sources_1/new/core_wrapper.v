@@ -39,7 +39,7 @@ module core_wrapper(
 reg [31:0] transaction_count=0;
 
 final begin
-$display(transactor_log, "\ntransaction_count: %d\n", transaction_count++);
+$display(transactor_log, "\ntransaction_count: %d\n", transaction_count);
 end
 // the function implemented in the testbench file
 import "DPI-C" context task run_testbench();
