@@ -60,7 +60,7 @@ compile_s:
 	@echo " Compiling for simulation - START                                        "
 	@echo ===========================================================================
 	@vlib work
-	@vlog +acc=rnbp -dpiheader ./work/vc_hdrs.h                                     \
+	@vlog -modelsimini ../modelsim.ini +acc=rnbp -dpiheader ./work/vc_hdrs.h                                     \
 		  $(ERROR) $(DEFINE_TRACE)                                                  \
 		  -ccflags "-I ./work"  \
 		  -sv $(DUT) $(SIM) $(TESTBENCH)
@@ -83,9 +83,9 @@ compile_ABV:
 	@echo " Compiling for Assertion Based Verifcation - START                       "
 	@echo ===========================================================================
 	@vlib work
-	@vlog +acc=rnbp -dpiheader ./work/vc_hdrs.h                                     \
+	@vlog -modelsimini ../modelsim.ini +acc=rnbp -dpiheader ./work/vc_hdrs.h                                     \
 		  $(ERROR) $(DEFINE_TRACE)                                                  \
-		  -ccflags "-I ./work"                                                      \
+		  -ccflags " -I ./work"                                                      \
 		  -sv $(DUT) $(SIM) $(TESTBENCH) -cuname assertions -mfcu $(SVA)
 	@echo ===========================================================================
 	@echo " Compiling for Assertion Based Verifcation - END                         "
@@ -96,7 +96,7 @@ run_ABV:
 	@echo " Simulation - START                                                      "
 	@echo ===========================================================================
 	@vsim -quiet -suppress vopt-13314,vsim-4075                                   \
-	      -c sim1 -do "assertion fail -r / -limit 1 sim1; run 1ms;                \
+	      -c sim1 -do "assertion fail -r / sim1; run 1ms;                \
 	                   assertion report -failed -r sim1 -file fault_report.txt;   \
 					   exit"
 	@cat fault_report.txt
