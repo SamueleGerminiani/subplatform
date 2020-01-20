@@ -1,0 +1,731 @@
+m255
+K4
+z2
+!s11f vlog 2019.4 2019.10, Oct 15 2019
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/sam/simple_platform/questa.simulation
+T_opt
+!s110 1579516783
+Vd<_`bQ1]_3aMjPazC0zLL0
+04 4 4 work sim1 fast 0
+=1-000ae431a4f1-5e25836f-18d23-45e5
+o-quiet -auto_acc_if_foreign -work work -suppress vopt-13314,vsim-4075
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2019.4;69
+Xassertions
+Z2 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z3 !s110 1579516781
+V8I4kFRlg_QzJ3T:UCHF<B2
+r1
+!s85 0
+!i10b 1
+!s100 ckHKd?ojV9?jdo5E3HP8J3
+I8I4kFRlg_QzJ3T:UCHF<B2
+!i103 1
+S1
+R0
+Z4 w1579516731
+Z5 8../simple_platform.srcs/sources_1/new/camellia_wrapper.v
+Z6 F../simple_platform.srcs/sources_1/new/camellia_wrapper.v
+Z7 8../simple_platform.srcs/sources_1/new/core_wrapper.v
+Z8 F../simple_platform.srcs/sources_1/new/core_wrapper.v
+Z9 8../simple_platform.srcs/sources_1/new/serial_transmitter.v
+Z10 F../simple_platform.srcs/sources_1/new/serial_transmitter.v
+Z11 8../simple_platform.srcs/sources_1/new/serial_transmitter_wrapper.v
+Z12 F../simple_platform.srcs/sources_1/new/serial_transmitter_wrapper.v
+Z13 8../simple_platform.srcs/sources_1/new/syscon.v
+Z14 F../simple_platform.srcs/sources_1/new/syscon.v
+Z15 8../simple_platform.srcs/sources_1/new/wishbone_bus.v
+Z16 F../simple_platform.srcs/sources_1/new/wishbone_bus.v
+Z17 8../simple_platform.srcs/sources_1/new/wishbone_bus_selector.v
+Z18 F../simple_platform.srcs/sources_1/new/wishbone_bus_selector.v
+Z19 8../simple_platform.srcs/sources_1/new/buslayer_master.sv
+Z20 F../simple_platform.srcs/sources_1/new/buslayer_master.sv
+Z21 8../simple_platform.srcs/sources_1/new/buslayer_slave.sv
+Z22 F../simple_platform.srcs/sources_1/new/buslayer_slave.sv
+Z23 8../simple_platform.srcs/sources_1/new/simple_platform.sv
+Z24 F../simple_platform.srcs/sources_1/new/simple_platform.sv
+Z25 8../simple_platform.srcs/sources_1/imports/platform/camellia.v
+Z26 F../simple_platform.srcs/sources_1/imports/platform/camellia.v
+Z27 8../simple_platform.srcs/sim_1/new/sim1.v
+Z28 F../simple_platform.srcs/sim_1/new/sim1.v
+8../simple_platform.srcs/assertions/bl_master_assertions.sv
+F../simple_platform.srcs/assertions/bl_master_assertions.sv
+8../simple_platform.srcs/assertions/wishbone_assertions.sv
+F../simple_platform.srcs/assertions/wishbone_assertions.sv
+!i122 -1
+L0 2
+Z29 OL;L;2019.4;69
+31
+Z30 !s108 1579516781.000000
+Z31 !s107 ../simple_platform.srcs/assertions/wishbone_assertions.sv|../simple_platform.srcs/assertions/bl_master_assertions.sv|../simple_platform.srcs/sim_1/new/sim1.v|../simple_platform.srcs/sources_1/imports/platform/camellia.v|../simple_platform.srcs/sources_1/new/simple_platform.sv|../simple_platform.srcs/sources_1/new/buslayer_slave.sv|../simple_platform.srcs/sources_1/new/buslayer_master.sv|../simple_platform.srcs/sources_1/new/wishbone_bus_selector.v|../simple_platform.srcs/sources_1/new/wishbone_bus.v|../simple_platform.srcs/sources_1/new/syscon.v|../simple_platform.srcs/sources_1/new/serial_transmitter_wrapper.v|../simple_platform.srcs/sources_1/new/serial_transmitter.v|../simple_platform.srcs/sources_1/new/core_wrapper.v|../simple_platform.srcs/sources_1/new/camellia_wrapper.v|
+Z32 !s90 -modelsimini|../modelsim.ini|+acc=rnbp|-dpiheader|./work/vc_hdrs.h|-ccflags| -I ./work|-sv|../simple_platform.srcs/sources_1/new/camellia_wrapper.v|../simple_platform.srcs/sources_1/new/core_wrapper.v|../simple_platform.srcs/sources_1/new/serial_transmitter.v|../simple_platform.srcs/sources_1/new/serial_transmitter_wrapper.v|../simple_platform.srcs/sources_1/new/syscon.v|../simple_platform.srcs/sources_1/new/wishbone_bus.v|../simple_platform.srcs/sources_1/new/wishbone_bus_selector.v|../simple_platform.srcs/sources_1/new/buslayer_master.sv|../simple_platform.srcs/sources_1/new/buslayer_slave.sv|../simple_platform.srcs/sources_1/new/simple_platform.sv|../simple_platform.srcs/sources_1/imports/platform/camellia.v|../simple_platform.srcs/sim_1/new/sim1.v|../firmware/sp_fw.c|-cuname|assertions|-mfcu|../simple_platform.srcs/assertions/bl_master_assertions.sv|../simple_platform.srcs/assertions/wishbone_assertions.sv|
+!i113 0
+Z33 o+acc=rnbp -sv -cuname assertions -mfcu -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vbuslayer_master
+Z34 !s105 assertions
+Z35 DXx4 work 10 assertions 0 22 8I4kFRlg_QzJ3T:UCHF<B2
+R2
+R3
+!i10b 1
+!s100 oC;zI=0Ul01[G@R91UDPQ0
+!s11b fmhCoX;HXb;7E;]O7Ao533
+IBbQ1aiEcz`[D[=f95liQ90
+Z36 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+Z37 w1579170702
+R19
+R20
+!i122 -1
+L0 27
+R29
+r1
+!s85 0
+31
+R30
+R31
+R32
+!i113 0
+R33
+R1
+vbuslayer_slave
+R34
+R35
+R2
+R3
+!i10b 1
+!s100 i8<^OlQBI^il8FdDU][Rc3
+!s11b 4DWO>W5F[l9]i61kQFb7k0
+I2RRzXKNLNBm_dC?`c27A[2
+R36
+S1
+R0
+R37
+R21
+R22
+!i122 -1
+Z38 L0 25
+R29
+r1
+!s85 0
+31
+R30
+R31
+R32
+!i113 0
+R33
+R1
+vcamellia
+R34
+R35
+R2
+R3
+!i10b 1
+!s100 T<Y]7OVTWHk6a;VIdKZ1a2
+!s11b B:KVnMB5L7b@[EM9D9Gd60
+I7lM]AUKoA]Tcm98<SofO`2
+R36
+S1
+R0
+R37
+R25
+R26
+!i122 -1
+L0 38
+R29
+r1
+!s85 0
+31
+R30
+R31
+R32
+!i113 0
+R33
+R1
+vCamellia_f_func
+R34
+R35
+R2
+R3
+!i10b 1
+!s100 ^zYlVnPV>Ml:<ji2?GB1e0
+!s11b zB2Pe]RgI;R_=hFR0Pe052
+IR8Hl:e;F<6HB^d2XP]6iN0
+R36
+S1
+R0
+R37
+R25
+R26
+!i122 -1
+L0 502
+R29
+r1
+!s85 0
+31
+R30
+R31
+R32
+!i113 0
+R33
+R1
+n@camellia_f_func
+vCamellia_fl
+R34
+R35
+R2
+R3
+!i10b 1
+!s100 niMTD1nUAK5FIcXmO;FO41
+!s11b A`O[3Pb8O]dkkBMQgnALM1
+Ich@0gbT2bQeI6KY5E2=W73
+R36
+S1
+R0
+R37
+R25
+R26
+!i122 -1
+L0 556
+R29
+r1
+!s85 0
+31
+R30
+R31
+R32
+!i113 0
+R33
+R1
+n@camellia_fl
+vCamellia_fl_minus
+R34
+R35
+R2
+R3
+!i10b 1
+!s100 nJFgHTc8mBeYm_BakFf>e2
+!s11b abSJSeaADR18^`FG]5IF63
+IfNGBbnX4GS;jfR6CcTco42
+R36
+S1
+R0
+R37
+R25
+R26
+!i122 -1
+L0 611
+R29
+r1
+!s85 0
+31
+R30
+R31
+R32
+!i113 0
+R33
+R1
+n@camellia_fl_minus
+vCamellia_fl_plus
+R34
+R35
+R2
+R3
+!i10b 1
+!s100 <S=0O@>TcfOU]aONXBQ:33
+!s11b ?7WM:DOM5ISiB2FTm8KYW1
+IDF>ab>];LMK5Mb5XQgFJj2
+R36
+S1
+R0
+R37
+R25
+R26
+!i122 -1
+L0 588
+R29
+r1
+!s85 0
+31
+R30
+R31
+R32
+!i113 0
+R33
+R1
+n@camellia_fl_plus
+vCamellia_key_scheduler
+R34
+R35
+R2
+R3
+!i10b 1
+!s100 kJ=HS>P4S=G^WDSIUm62`0
+!s11b Q68O]bL[cJoWm8Z<jfNCA2
+Ia;6k365c@4[^V^NzUMC;92
+R36
+S1
+R0
+R37
+R25
+R26
+!i122 -1
+L0 230
+R29
+r1
+!s85 0
+31
+R30
+R31
+R32
+!i113 0
+R33
+R1
+n@camellia_key_scheduler
+vCamellia_p_func
+R34
+R35
+R2
+R3
+!i10b 1
+!s100 O4Ej]ekG4LA5_Qj;ekBGl3
+!s11b FNSn]NLMLNdZH9KBg9I353
+IAbodIoba^ShYHW]FMG2[c1
+R36
+S1
+R0
+R37
+R25
+R26
+!i122 -1
+L0 538
+R29
+r1
+!s85 0
+31
+R30
+R31
+R32
+!i113 0
+R33
+R1
+n@camellia_p_func
+vCamellia_randomize
+R34
+R35
+R2
+R3
+!i10b 1
+!s100 S;PS<iPKnKTA7Y96Gk6j=0
+!s11b _@JX@8?2G5BU2`oM3R;AG1
+I]SbLIX_5T44B@Vc^l4FOK3
+R36
+S1
+R0
+R37
+R25
+R26
+!i122 -1
+L0 339
+R29
+r1
+!s85 0
+31
+R30
+R31
+R32
+!i113 0
+R33
+R1
+n@camellia_randomize
+vCamellia_sbox1
+R34
+R35
+R2
+R3
+!i10b 1
+!s100 TAj[KY1;=8HUQLKLDSD2I0
+!s11b ?>_D>5eP2nYIF=`]MDX@z1
+IPO:`UJ^F9:>@fV=SC_6eO3
+R36
+S1
+R0
+R37
+R25
+R26
+!i122 -1
+L0 633
+R29
+r1
+!s85 0
+31
+R30
+R31
+R32
+!i113 0
+R33
+R1
+n@camellia_sbox1
+vCamellia_sbox2
+R34
+R35
+R2
+R3
+!i10b 1
+!s100 c62QAH6M=0=BM3K<Z]fUR0
+!s11b H5?a>KWb[7;]8M:Ib8IiD1
+I;SgCc5ScOLI?cOEEnIk_j1
+R36
+S1
+R0
+R37
+R25
+R26
+!i122 -1
+L0 714
+R29
+r1
+!s85 0
+31
+R30
+R31
+R32
+!i113 0
+R33
+R1
+n@camellia_sbox2
+vCamellia_sbox3
+R34
+R35
+R2
+R3
+!i10b 1
+!s100 47g=[MhdjMd5ZGE[>T0z:1
+!s11b nHO0AUoNWHg0F2M6XA9Q=0
+I^X6`lk;@HORdHX8F@Vzg>3
+R36
+S1
+R0
+R37
+R25
+R26
+!i122 -1
+L0 796
+R29
+r1
+!s85 0
+31
+R30
+R31
+R32
+!i113 0
+R33
+R1
+n@camellia_sbox3
+vCamellia_sbox4
+R34
+R35
+R2
+R3
+!i10b 1
+!s100 aj6oN4Ff4iOmUnVSV785k3
+!s11b dCeMcQf7:OdzG[VdcDE4=1
+IA==]9K26KGESGDMSgaL0:3
+R36
+S1
+R0
+R37
+R25
+R26
+!i122 -1
+L0 876
+R29
+r1
+!s85 0
+31
+R30
+R31
+R32
+!i113 0
+R33
+R1
+n@camellia_sbox4
+vCamellia_sequencer
+R34
+R35
+R2
+R3
+!i10b 1
+!s100 IUMaogDBj>MCB3A1dH9C[1
+!s11b 87Q1ILlOP:=US@16hmUG83
+IEKoK=A;UK8[Q@V:1;K<md3
+R36
+S1
+R0
+R37
+R25
+R26
+!i122 -1
+L0 139
+R29
+r1
+!s85 0
+31
+R30
+R31
+R32
+!i113 0
+R33
+R1
+n@camellia_sequencer
+vcamellia_wrapper
+R34
+R35
+R2
+R3
+!i10b 1
+!s100 [PV81R_X4FnGzU=_kKHnU2
+!s11b 7meIK[QFYW2cM8;L9CzaS2
+IJ3]Sa_5eBXY?2`Ok3g0673
+R36
+S1
+R0
+R4
+R5
+R6
+!i122 -1
+L0 59
+R29
+r1
+!s85 0
+31
+R30
+R31
+R32
+!i113 0
+R33
+R1
+vcore_wrapper
+R34
+R35
+R2
+R3
+!i10b 1
+!s100 90][=RRI6;R=RnT3A<a_e3
+!s11b @I3?hY<VK<>jYl=0g>2O@0
+IICGAa^JmoUZ05XIVQFjfX0
+R36
+S1
+R0
+R37
+R7
+R8
+!i122 -1
+L0 22
+R29
+r1
+!s85 0
+31
+R30
+R31
+R32
+!i113 0
+R33
+R1
+vserial_transmitter
+R34
+R35
+R2
+R3
+!i10b 1
+!s100 9if^9^`>V7mDEDHaaBO3l0
+!s11b VGPzk3OoMU8ma]QSdT7<00
+Igb_eHVaEzg298AUnU2FYe2
+R36
+S1
+R0
+R37
+R9
+R10
+!i122 -1
+Z39 L0 26
+R29
+r1
+!s85 0
+31
+R30
+R31
+R32
+!i113 0
+R33
+R1
+vserial_transmitter_wrapper
+R34
+R35
+R2
+R3
+!i10b 1
+!s100 h5WG8MBFU_a00MS?lDMz=0
+!s11b ml[LG`T^Q5mP?Q:8j1o6>3
+I7=7<afO18DHU_MWNIzOF11
+R36
+S1
+R0
+R37
+R11
+R12
+!i122 -1
+Z40 L0 24
+R29
+r1
+!s85 0
+31
+R30
+R31
+R32
+!i113 0
+R33
+R1
+vsim1
+R34
+R35
+R2
+R3
+!i10b 1
+!s100 hBOYUW9IL>h^=lj@=ak8N1
+!s11b @;6V3bFJSo3LMK_No:Yo92
+IH^?3mn?[<`jU527lST0h03
+R36
+S1
+R0
+w1579424369
+R27
+R28
+!i122 -1
+R39
+R29
+r1
+!s85 0
+31
+R30
+R31
+R32
+!i113 0
+R33
+R1
+vsimple_platform
+R34
+R35
+R2
+R3
+!i10b 1
+!s100 neL:R[1MQMY4c=@4@5oHj1
+!s11b z]X]n@NkGaI1Mjg0;<=6c0
+IKne7c=Xb@IR@RVC7cY>eB1
+R36
+S1
+R0
+R37
+R23
+R24
+!i122 -1
+R38
+R29
+r1
+!s85 0
+31
+R30
+R31
+R32
+!i113 0
+R33
+R1
+vsyscon
+R34
+R35
+R2
+R3
+!i10b 1
+!s100 PhRQMhb6MgIQ5a3Lona6E0
+!s11b V;APZO:;XYRP4>eARA1_<3
+I`iHm^JijXS??XVb9e[8Mi3
+R36
+S1
+R0
+R37
+R13
+R14
+!i122 -1
+R40
+R29
+r1
+!s85 0
+31
+R30
+R31
+R32
+!i113 0
+R33
+R1
+vwishbone_bus
+R34
+R35
+R2
+R3
+!i10b 1
+!s100 XKUT^o2>QTYhX2HDMRP7^3
+!s11b fXDW[@B[7J>amNJLaR<d<0
+I_e<E8Mj9?:E4ejCRkD<=g3
+R36
+S1
+R0
+R37
+R15
+R16
+!i122 -1
+R40
+R29
+r1
+!s85 0
+31
+R30
+R31
+R32
+!i113 0
+R33
+R1
+vwishbone_bus_selector
+R34
+R35
+R2
+R3
+!i10b 1
+!s100 3MFanWfa4ah:<km3Iha0L1
+!s11b <O5JKcTejf`KiFg:8S_XF2
+IN6LDoGCQdB`Q5G[6>nfKn1
+R36
+S1
+R0
+w1579456436
+R17
+R18
+!i122 -1
+R40
+R29
+r1
+!s85 0
+31
+R30
+R31
+R32
+!i113 0
+R33
+R1

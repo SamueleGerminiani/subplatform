@@ -220,6 +220,5 @@ always_comb begin
 end
 
 
-`include  "../../assertions/cammelia_assertions.sv"
 
 endmodule

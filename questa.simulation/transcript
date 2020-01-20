@@ -1,5 +1,5 @@
-# vsim -modelsimini ../modelsim.ini -quiet -suppress vopt-13314,vsim-4075 -c sim1 -do "run 1ms; exit" 
-# Start time: 11:13:56 on Jan 20,2020
+# vsim -modelsimini ../modelsim.ini -quiet -suppress vopt-13314,vsim-4075 -c sim1 -do "assertion fail -r / sim1; run 1ms;                                   assertion report -failed -r sim1 -file fault_report.txt;   				   exit" 
+# Start time: 11:39:42 on Jan 20,2020
 # ** Note: (vsim-3812) Design is being optimized...
 # //  ModelSim SE-64 2019.4 Oct 15 2019 Linux 5.3.0-26-generic
 # //
@@ -15,10 +15,14 @@
 # //  18 U.S.C. Section 1905.
 # //
 # ** Note: (vsim-7082) For C/C++ auto compile, choosing compiler /usr/bin/gcc set by the DpiCppPath modelsim.ini variable.
-# run 1ms
-#  exit
+# assertion fail -r / sim1
+#  run 1ms
+#                                    assertion report -failed -r sim1 -file fault_report.txt
+#    				   exit
 #           2
 # transaction_count:      14647
 # 
-# End time: 11:14:00 on Jan 20,2020, Elapsed time: 0:00:04
+# WishboneCheck_Pass      100000
+# WishboneCheck_Fail           0
+# End time: 11:39:47 on Jan 20,2020, Elapsed time: 0:00:05
 # Errors: 0, Warnings: 0, Suppressed Warnings: 4

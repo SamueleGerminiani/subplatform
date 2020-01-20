@@ -4,23 +4,23 @@ checker MasterBusCheck(clk,reset,busy,request,wb_we,write,wb_adr,address, wb_dat
     clocking MasterBusCheck_clocking @(posedge clk);
 
         property es1;
-
+            'b1;
         endproperty
 
         property es2_a;
-
+            'b1;
         endproperty
 
         property es2_b;
-
+            'b1;
         endproperty
 
         property es2_c;
-
+            'b1;
         endproperty
 
         property es2_d;
-
+            'b1;
         endproperty
 
     endclocking

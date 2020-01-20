@@ -5,7 +5,7 @@ checker BusCheck(clk, reset,wb_we_m, wb_cyc_m, wb_stb, wb_ack_s,wb_stall_s);
 
     clocking Buscheck_clocking @(posedge clk);
         property es3;
-
+            'b1;
         endproperty
     endclocking
 
