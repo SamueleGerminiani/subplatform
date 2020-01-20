@@ -1,0 +1,51 @@
+<root>
+    <tracereader name="mangroveTraceReader">
+        <vcdParserConfig>
+            <clockSignal name="wb_clk"/>
+            <splitSignals value="No"/>
+            <addModulePathToVariables value="No"/>
+            <convertSingleBitLogicToBool value="Yes"/>
+        </vcdParserConfig>
+    </tracereader>
+
+    <coneminer name="manualDefinition">
+        <coneOfInfluence name="cone1">
+            <atomicPropositions>
+                <atomicProposition formula="rst"   dir="inout" />
+                <atomicProposition formula="data_to_send[7:0]"   dir="inout" />
+                <atomicProposition formula="state[3:0]"   dir="inout" />
+                <atomicProposition formula="next_state[3:0]"   dir="inout" />
+                <atomicProposition formula="send"   dir="inout" />
+                <atomicProposition formula="done"   dir="inout" />
+                <atomicProposition formula="val"   dir="inout" />
+            </atomicPropositions>
+        </coneOfInfluence>
+    </coneminer>
+
+    <!-- 
+        The full template is "(antecedent -> consequent)"
+        The antecedent is generated automatically following the template: p_1 && p_2 ... p_n
+
+        The templates must be written in the spot ltl language.
+        Some notes for the spot ltl language:
+        - Use "<->" instead of "=="
+        - Use "X[constant] expression" intead of "nexttime[constant] expression"
+        - Use "expression1 U expression2" intead of "expression1 until expression2"
+        - Use "expression1 -> expression2" intead of "expression1 |-> expression2"
+        - The other operators should hold the usual syntax
+    -->
+    <propositionminer name="TBMiner">
+        <ConsequentTemplates>
+                    <template value="X(p1)"/>
+         </ConsequentTemplates>
+    </propositionminer>
+
+    <propertyminer name="A-teamMiner">
+         <constraints maxVariables="10"/>
+    </propertyminer>
+
+    <propertyprinter name="sva">
+        <generateChecker value="No" name="transmitter"/>
+    </propertyprinter>
+
+</root>

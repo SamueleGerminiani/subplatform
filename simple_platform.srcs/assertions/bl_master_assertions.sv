@@ -1,21 +1,38 @@
 `define BUSLAYER_MASTER sim1.p.core.master_interface
-checker checker0(clk, wb_rst, wb_cyc, wb_stb,busy,request,write,ready_from_bus,error_from_bus);
-    clocking mock @(posedge clk);
+checker MasterBusCheck(clk,reset,busy,request,wb_we,write,wb_adr,address, wb_dat_o,data_to_bus, wb_sel, byte_sel);
 
-        property master_read_write_transaction;
+    clocking MasterBusCheck_clocking @(posedge clk);
+
+        property es1;
+
+        endproperty
+
+        property es2_a;
+
+        endproperty
+
+        property es2_b;
+
+        endproperty
+
+        property es2_c;
+
+        endproperty
+
+        property es2_d;
 
         endproperty
 
     endclocking
 
+    initial
+        assert property (MasterBusCheck_clocking.es1);
 
-    initial begin
-        assert property (mock.master_read_write_transaction)begin
+    assert property (MasterBusCheck_clocking.es2_a);
+    assert property (MasterBusCheck_clocking.es2_b);
+    assert property (MasterBusCheck_clocking.es2_c);
+    assert property (MasterBusCheck_clocking.es2_d);
 
-        end
-    end
+    endchecker: MasterBusCheck
 
-
-    endchecker: checker0
-
-bind `BUSLAYER_MASTER checker0 buslayer_master_checker_instance(`BUSLAYER_MASTER.wb_clk,`BUSLAYER_MASTER.wb_rst, `BUSLAYER_MASTER.wb_cyc, `BUSLAYER_MASTER.wb_stb, `BUSLAYER_MASTER.busy, `BUSLAYER_MASTER.request, `BUSLAYER_MASTER.write,`BUSLAYER_MASTER.ready_from_bus,`BUSLAYER_MASTER.error_from_bus);
+bind `BUSLAYER_MASTER MasterBusCheck masterBus_checker_instance(`BUSLAYER_MASTER.wb_clk,`BUSLAYER_MASTER.wb_rst, `BUSLAYER_MASTER.busy, `BUSLAYER_MASTER.request, `BUSLAYER_MASTER.wb_we, `BUSLAYER_MASTER.write, `BUSLAYER_MASTER.wb_adr, `BUSLAYER_MASTER.address, `BUSLAYER_MASTER.wb_dat_o, `BUSLAYER_MASTER.data_to_bus, `BUSLAYER_MASTER.wb_sel, `BUSLAYER_MASTER.byte_sel);

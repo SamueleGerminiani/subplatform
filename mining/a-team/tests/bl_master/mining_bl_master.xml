@@ -9,32 +9,30 @@
     </tracereader>
 
     <coneminer name="manualDefinition">
-        <coneOfInfluence name="ManualAnalysis">
+        <coneOfInfluence name="Es1_2_assertions">
             <atomicPropositions>
-                <atomicProposition formula="wb_cyc"   dir="out" />
-                <atomicProposition formula="wb_stb"   dir="out" />
-                <atomicProposition formula="wb_we"    dir="out" />
-                <atomicProposition formula="wb_ack"   dir="in" />
-                <atomicProposition formula="wb_err"   dir="in" />
-                <atomicProposition formula="wb_rst"   dir="in" />
-                <atomicProposition formula="wb_stall" dir="in" />
-                <atomicProposition formula="request"  dir="in" />
-                <atomicProposition formula="write"    dir="in" />
-                <atomicProposition formula="busy"     dir="out" />
-                <atomicProposition formula="reset"    dir="out" />
-                <atomicProposition formula="ready_from_bus" dir="out" />
-                <atomicProposition formula="error_from_bus" dir="out" />
+                <!-- add propositions here -->
+                <atomicProposition formula="busy"   dir="inout" />
             </atomicPropositions>
         </coneOfInfluence>
     </coneminer>
 
     <!-- 
-        The template is "always(antecedent -> consequent)"
-        The antecedent is generated automatically
+        The full template is "(antecedent -> consequent)"
+        The antecedent is generated automatically following the template: p_1 && p_2 ... p_n
+
+        The templates must be written in the spot ltl language.
+        Some notes for the spot ltl language:
+        - Use "<->" instead of "=="
+        - Use "X[constant] expression" intead of "nexttime[constant] expression"
+        - Use "expression1 U expression2" intead of "expression1 until expression2"
+        - Use "expression1 -> expression2" intead of "expression1 |-> expression2"
+        - The other operators should hold the usual syntax
     -->
     <propositionminer name="TBMiner">
         <ConsequentTemplates>
-            <template value="p1"/>
+                <!-- add templates here -->
+                    <template value="p2"/>
          </ConsequentTemplates>
     </propositionminer>
 
@@ -43,7 +41,7 @@
     </propertyminer>
 
     <propertyprinter name="sva">
-        <generateChecker value="Yes" name="buslayer_master"/>
+        <generateChecker value="No" name="buslayer_master"/>
     </propertyprinter>
 
 </root>

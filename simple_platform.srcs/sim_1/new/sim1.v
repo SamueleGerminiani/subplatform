@@ -122,6 +122,8 @@ initial begin
                  p.slave_1.transmitter.data_to_send,
                  p.slave_1.transmitter.send,
                  p.slave_1.transmitter.done,
+                 p.slave_1.transmitter.state,
+                 p.slave_1.transmitter.next_state,
                  p.slave_1.transmitter.val);
  `endif
 end

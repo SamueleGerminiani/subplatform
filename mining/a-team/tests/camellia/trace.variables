@@ -1,9 +1,9 @@
-bsy bool
-drdy bool
-dvld bool
-en bool
-encdec bool
-krdy bool
-kvld bool
-rstn bool
+BSY bool
+Drdy bool
+Dvld bool
+EN bool
+EncDec bool
+Krdy bool
+Kvld bool
+RSTn bool
 

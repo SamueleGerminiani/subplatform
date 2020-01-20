@@ -27,13 +27,13 @@ help:
 	@echo  " --- RECIPES ---------------------------------------------------------------------------"
 	@echo  " simulation             => Performs: clean, compile_s, and run_s        			   "
 	@echo  " mining_bl_master       => Performs: clean, and assertion mining for buslayer (master) "
-	@echo  " mining_bl_slave_0      => Performs: clean, and assertion mining for buslayer (slave_0)"
-	@echo  " mining_bl_slave_1      => Performs: clean, and assertion mining for buslayer (slave_1)"
+#	@echo  " mining_bl_slave_0      => Performs: clean, and assertion mining for buslayer (slave_0)"
+#	@echo  " mining_bl_slave_1      => Performs: clean, and assertion mining for buslayer (slave_1)"
 	@echo  " mining_camellia        => Performs: clean, and assertion mining for camellia          "
-	@echo  " mining_transmitter     => Performs: clean, and assertion mining for transamitter      "
+	@echo  " mining_serial_transmitter     => Performs: clean, and assertion mining for transamitter      "
 	@echo  " ABV                    => Performs: clean, and Assertion-based Verification           "
 	@echo  " faultC_bl_master       => Performs: clean, and fault coverage for buslayer (master)   "
-	@echo  " faultC_bl_slave        => Performs: clean, and fault coverage for buslayer (slave)    "
+#	@echo  " faultC_bl_slave        => Performs: clean, and fault coverage for buslayer (slave)    "
 	@echo  " faultC_camellia        => Performs: clean, and fault coverage for camellia            "
 	@echo  " faultC_transmitter     => Performs: clean, and fault coverage for transmitter         "
 	@echo  "                                                                                       "
@@ -72,7 +72,7 @@ run_s:
 	@echo ===========================================================================
 	@echo " Simulation - START                                                      "
 	@echo ===========================================================================
-	@vsim -quiet -suppress vopt-13314,vsim-4075                                     \
+	@vsim -modelsimini ../modelsim.ini -quiet -suppress vopt-13314,vsim-4075                                     \
 		  -c sim1 -do "run 1ms; exit"
 	@echo ===========================================================================
 	@echo " Simulation - END                                                        "
@@ -95,7 +95,7 @@ run_ABV:
 	@echo ===========================================================================
 	@echo " Simulation - START                                                      "
 	@echo ===========================================================================
-	@vsim -quiet -suppress vopt-13314,vsim-4075                                   \
+	@vsim -modelsimini ../modelsim.ini -quiet -suppress vopt-13314,vsim-4075                                   \
 	      -c sim1 -do "assertion fail -r / sim1; run 1ms;                \
 	                   assertion report -failed -r sim1 -file fault_report.txt;   \
 					   exit"
@@ -130,24 +130,24 @@ simulation: clean compile_s run_s
 
 mining_bl_master: DEFINE_TRACE=+define+TRACE_WB_MASTER
 mining_bl_master: NAME=bl_master
-mining_bl_master: clean compile_s run_s 
-mining_bl_master: assertion_mining
+mining_bl_master: clean compile_s run_s assertion_mining
 
-mining_bl_slave_0: DEFINE_TRACE=+define+TRACE_WB_SLAVE_0
-mining_bl_slave_0: NAME=bl_slave_0
-mining_bl_slave_0: clean compile_s run_s assertion_mining
+mining_serial_transmitter: DEFINE_TRACE=+define+SERIAL_TRANSMITTER
+mining_serial_transmitter: NAME=serial_transmitter
+mining_serial_transmitter: clean compile_s run_s assertion_mining
 
-mining_bl_slave_1: DEFINE_TRACE=+define+TRACE_WB_SLAVE_1
-mining_bl_slave_1: NAME=bl_slave_1
-mining_bl_slave_1: clean compile_s run_s assertion_mining
+#mining_bl_slave_0: DEFINE_TRACE=+define+TRACE_WB_SLAVE_0
+#mining_bl_slave_0: NAME=bl_slave_0
+#mining_bl_slave_0: clean compile_s run_s assertion_mining
+#
+#mining_bl_slave_1: DEFINE_TRACE=+define+TRACE_WB_SLAVE_1
+#mining_bl_slave_1: NAME=bl_slave_1
+#mining_bl_slave_1: clean compile_s run_s assertion_mining
 
 mining_camellia: DEFINE_TRACE=+define+CAMELLIA
 mining_camellia: NAME=camellia
 mining_camellia: clean compile_s run_s assertion_mining
 
-mining_transmitter: DEFINE_TRACE=+define+SERIAL_TRANSMITTER
-mining_transmitter: NAME=transmitter
-mining_transmitter: clean compile_s run_s assertion_mining
 
 ABV: clean compile_ABV run_ABV
 

@@ -1,7 +1,7 @@
-# vsim -quiet -suppress vopt-13314,vsim-4075 -c sim1 -do "assertion fail -r / -limit 1 sim1; run 1ms;                                   assertion report -failed -r sim1 -file fault_report.txt;   				   exit" 
-# Start time: 12:57:30 on Jan 13,2020
+# vsim -modelsimini ../modelsim.ini -quiet -suppress vopt-13314,vsim-4075 -c sim1 -do "run 1ms; exit" 
+# Start time: 11:13:56 on Jan 20,2020
 # ** Note: (vsim-3812) Design is being optimized...
-# //  ModelSim SE-64 2019.4 Oct 15 2019 Linux 5.0.0-37-generic
+# //  ModelSim SE-64 2019.4 Oct 15 2019 Linux 5.3.0-26-generic
 # //
 # //  Copyright 1991-2019 Mentor Graphics Corporation
 # //  All Rights Reserved.
@@ -14,15 +14,11 @@
 # //  is prohibited from disclosure under the Trade Secrets Act,
 # //  18 U.S.C. Section 1905.
 # //
-# ** Note: (vsim-7082) For C/C++ auto compile, choosing compiler /usr/bin/gcc set from the PATH environment variable.
-# assertion fail -r / -limit 1 sim1
-#  run 1ms
-# ** Error: Assertion error.
-#    Time: 5 ns Started: 5 ns  Scope: sim1.p.core.master_interface.buslayer_master_checker_instance File: ../simple_platform.srcs/assertions/bl_master_assertions.sv Line: 13
-#                                    assertion report -failed -r sim1 -file fault_report.txt
-#    				   exit
+# ** Note: (vsim-7082) For C/C++ auto compile, choosing compiler /usr/bin/gcc set by the DpiCppPath modelsim.ini variable.
+# run 1ms
+#  exit
 #           2
 # transaction_count:      14647
 # 
-# End time: 12:57:35 on Jan 13,2020, Elapsed time: 0:00:05
-# Errors: 1, Warnings: 0, Suppressed Warnings: 4
+# End time: 11:14:00 on Jan 20,2020, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 0, Suppressed Warnings: 4
