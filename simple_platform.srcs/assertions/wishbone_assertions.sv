@@ -16,8 +16,10 @@ checker BusCheck(clk, reset,wb_we_m, wb_cyc_m, wb_stb, wb_ack_s,wb_stall_s);
         fail_count++;
 
     final begin
+        /*
         $display("WishboneCheck_Pass %d",pass_count);
         $display("WishboneCheck_Fail %d",fail_count);
+        */
     end
 
 endchecker: BusCheck

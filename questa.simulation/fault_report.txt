@@ -1,0 +1,6 @@
+-----------------------------------------------------------------------------------------------
+Name       File(Line)                                                        Failure      Pass 
+                                                                             Count        Count
+-----------------------------------------------------------------------------------------------
+/sim1/p/core/master_interface/masterBus_checker_instance/assert__0
+           ../simple_platform.srcs/assertions/bl_master_assertions.sv(28)      70702          0

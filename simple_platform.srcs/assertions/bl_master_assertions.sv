@@ -4,7 +4,7 @@ checker MasterBusCheck(clk,reset,busy,request,wb_we,write,wb_adr,address, wb_dat
     clocking MasterBusCheck_clocking @(posedge clk);
 
         property es1;
-            'b1;
+            !busy && request |=> busy;
         endproperty
 
         property es2_a;
@@ -25,9 +25,7 @@ checker MasterBusCheck(clk,reset,busy,request,wb_we,write,wb_adr,address, wb_dat
 
     endclocking
 
-    initial
-        assert property (MasterBusCheck_clocking.es1);
-
+    assert property (MasterBusCheck_clocking.es1);
     assert property (MasterBusCheck_clocking.es2_a);
     assert property (MasterBusCheck_clocking.es2_b);
     assert property (MasterBusCheck_clocking.es2_c);
