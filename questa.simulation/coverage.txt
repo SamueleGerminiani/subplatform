@@ -1,0 +1,33 @@
+
+===========================================================================
+Fault: sim1.p.core.master_interface.busy 1'b0
+-----------------------------------------------------------------------------------------------
+Name       File(Line)                                                        Failure      Pass 
+                                                                             Count        Count
+-----------------------------------------------------------------------------------------------
+/sim1/p/core/master_interface/masterBus_checker_instance/assert__0
+           ../simple_platform.srcs/assertions/bl_master_assertions.sv(37)          1          0
+===========================================================================
+Fault: sim1.p.core.master_interface.wb_adr 1'b0
+-----------------------------------------------------------------------------------------------
+Name       File(Line)                                                        Failure      Pass 
+                                                                             Count        Count
+-----------------------------------------------------------------------------------------------
+/sim1/p/core/master_interface/masterBus_checker_instance/assert__1
+           ../simple_platform.srcs/assertions/bl_master_assertions.sv(38)          1          0
+===========================================================================
+Fault: sim1.p.core.master_interface.wb_dat_o 1'b0
+-----------------------------------------------------------------------------------------------
+Name       File(Line)                                                        Failure      Pass 
+                                                                             Count        Count
+-----------------------------------------------------------------------------------------------
+/sim1/p/core/master_interface/masterBus_checker_instance/assert__2
+           ../simple_platform.srcs/assertions/bl_master_assertions.sv(39)          1          0
+===========================================================================
+Fault: sim1.p.core.master_interface.wb_sel(0) 1'b0
+-----------------------------------------------------------------------------------------------
+Name       File(Line)                                                        Failure      Pass 
+                                                                             Count        Count
+-----------------------------------------------------------------------------------------------
+/sim1/p/core/master_interface/masterBus_checker_instance/assert__3
+           ../simple_platform.srcs/assertions/bl_master_assertions.sv(40)          1          0

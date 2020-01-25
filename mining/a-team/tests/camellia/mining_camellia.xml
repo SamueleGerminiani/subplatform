@@ -11,7 +11,6 @@
     <coneminer name="manualDefinition">
         <coneOfInfluence name="cone1">
             <atomicPropositions>
-                <!-- Add propositions here-->
                 <atomicProposition formula="BSY"   dir="inout" />
             </atomicPropositions>
         </coneOfInfluence>
@@ -31,8 +30,7 @@
     -->
     <propositionminer name="TBMiner">
         <ConsequentTemplates>
-            <!-- add templates here -->
-            <template value="p2"/>
+            <template value="X(p2)"/>
          </ConsequentTemplates>
     </propositionminer>
 
@@ -41,7 +39,7 @@
     </propertyminer>
 
     <propertyprinter name="sva">
-        <generateChecker value="No" name="camellia"/>
+        <generateChecker value="Yes" name="camellia"/>
     </propertyprinter>
 
 </root>

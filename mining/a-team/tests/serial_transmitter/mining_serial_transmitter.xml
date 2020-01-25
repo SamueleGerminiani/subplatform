@@ -11,10 +11,7 @@
     <coneminer name="manualDefinition">
         <coneOfInfluence name="cone1">
             <atomicPropositions>
-                <atomicProposition formula="rst"   dir="inout" />
-                <atomicProposition formula="data_to_send[7:0]"   dir="inout" />
-                <atomicProposition formula="state[3:0]"   dir="inout" />
-                <atomicProposition formula="next_state[3:0]"   dir="inout" />
+                <atomicProposition formula="state[3:0] == nexttime[1](next_state[3:0])"   dir="inout" />
                 <atomicProposition formula="send"   dir="inout" />
                 <atomicProposition formula="done"   dir="inout" />
                 <atomicProposition formula="val"   dir="inout" />

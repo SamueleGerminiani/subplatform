@@ -1,35 +1,43 @@
 `define BUSLAYER_MASTER sim1.p.core.master_interface
-checker MasterBusCheck(clk,reset,busy,request,wb_we,write,wb_adr,address, wb_dat_o,data_to_bus, wb_sel, byte_sel);
+checker MasterBusCheck(clk,reset,busy,request,wb_we,write,wb_adr,address, wb_dat_o,data_to_bus, wb_sel,byte_sel);
 
     clocking MasterBusCheck_clocking @(posedge clk);
 
-        property es1;
-            !busy && request |=> busy;
+
+        //Common behavior for read/write cycles
+        property p0;
+            (!busy && request) |=> busy;
         endproperty
 
-        property es2_a;
-            'b1;
+        /*Assertions for data flow: check that the out ports (wb_we,wb_adr,wb_data_o) have the same values of the
+        registers one clock tick before.*/
+        property p1;
+            //When a new write cycle begins
+            (!busy && request && write)
+            //then
+            |->
+            //check the data flow from register 'write' to port 'wb_we'
+            nexttime[1]( busy && wb_we == $past(write, 1));
         endproperty
 
-        property es2_b;
-            'b1;
+        property p2;
+            !(request && write) ##1 (request && write) |-> nexttime[1](wb_adr == $past(address, 1));
         endproperty
 
-        property es2_c;
-            'b1;
+        property p3;
+            !(request && write) ##1 (request && write) |-> nexttime[1](wb_dat_o == $past(data_to_bus, 1));
         endproperty
 
-        property es2_d;
-            'b1;
+        property p4;
+            !(request && write) ##1 (request && write) |-> nexttime[1](wb_sel == $past(byte_sel, 1));
         endproperty
-
     endclocking
 
-    assert property (MasterBusCheck_clocking.es1);
-    assert property (MasterBusCheck_clocking.es2_a);
-    assert property (MasterBusCheck_clocking.es2_b);
-    assert property (MasterBusCheck_clocking.es2_c);
-    assert property (MasterBusCheck_clocking.es2_d);
+
+    assert property (MasterBusCheck_clocking.p1);
+    assert property (MasterBusCheck_clocking.p2);
+    assert property (MasterBusCheck_clocking.p3);
+    assert property (MasterBusCheck_clocking.p4);
 
     endchecker: MasterBusCheck
 

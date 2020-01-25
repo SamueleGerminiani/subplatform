@@ -1,2 +1,0 @@
-sim1.p.slave_1.transmitter.data(2) 1'b0
-sim1.p.slave_1.transmitter.data(2) 1'b1

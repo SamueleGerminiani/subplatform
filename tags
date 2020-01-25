@@ -815,6 +815,7 @@ BulkPoolAllocator	mining/a-team/libs/lib/spot/include/spot/priv/robin_hood.hh	/^
 BulkPoolAllocator	mining/a-team/libs/lib/spot/include/spot/priv/robin_hood.hh	/^    BulkPoolAllocator(const BulkPoolAllocator& ROBIN_HOOD_UNUSED(o) \/*unused*\/) noexcept$/;"	f	class:robin_hood::detail::BulkPoolAllocator
 BulkPoolAllocator	mining/a-team/libs/lib/spot/include/spot/priv/robin_hood.hh	/^class BulkPoolAllocator {$/;"	c	namespace:robin_hood::detail
 C	mining/a-team/libs/lib/spot/include/spot/tl/formula.cc	/^#define C(/;"	d	file:
+CAMELLIA	simple_platform.srcs/assertions/camellia_assertions.sv	/^`define CAMELLIA sim1.p.slave_0.camallia_u$/;"	c
 CAMELLIA_BASE	simple_platform.srcs/sources_1/new/camellia_wrapper.v	/^`define CAMELLIA_BASE 32'h0$/;"	c
 CAMELLIA_BASE_ADDRESS	firmware/driver/camellia.h	/^#define CAMELLIA_BASE_ADDRESS /;"	d
 CAMELLIA_CONTROL_I	firmware/driver/camellia.h	/^#define CAMELLIA_CONTROL_I /;"	d
@@ -1773,9 +1774,8 @@ F	mining/a-team/libs/lib/spot/include/spot/tl/formula.hh	/^    F,               
 F	mining/a-team/libs/lib/spot/include/spot/tl/formula.hh	/^    static formula F(unsigned min_level, unsigned max_level, const formula& f)$/;"	f	class:spot::formula	typeref:typename:formula
 FAULTS_LIST	questa.simulation/Makefile	/^FAULTS_LIST=$/;"	m
 FAULTS_LIST	questa.simulation/Makefile	/^faultC_bl_master: FAULTS_LIST=..\/faults\/bl_master_faults.txt$/;"	m
-FAULTS_LIST	questa.simulation/Makefile	/^faultC_bl_slave: FAULTS_LIST=..\/faults\/bl_slave_faults.txt$/;"	m
 FAULTS_LIST	questa.simulation/Makefile	/^faultC_camellia: FAULTS_LIST=..\/faults\/camellia_faults.txt$/;"	m
-FAULTS_LIST	questa.simulation/Makefile	/^faultC_transmitter: FAULTS_LIST=..\/faults\/transmitter_faults.txt$/;"	m
+FAULTS_LIST	questa.simulation/Makefile	/^faultC_wishbone: FAULTS_LIST=..\/faults\/wishbone_faults.txt$/;"	m
 FAULTS_LIST	vcs.simulation/Makefile	/^FAULTS_LIST=$/;"	m
 FAULTS_LIST	vcs.simulation/Makefile	/^faultC_bl_slave: FAULTS_LIST=..\/faults\/bl_slave_faults.txt$/;"	m
 FAULTS_LIST	vcs.simulation/Makefile	/^faultC_camellia: FAULTS_LIST=..\/faults\/camellia_faults.txt$/;"	m
@@ -14852,6 +14852,9 @@ SUPPORTED_UUIDS	mining/a-team/libs/lib/antlr4/include/runtime/Cpp/runtime/src/at
 SUPPRESS_PRECEDENCE_FILTER	mining/a-team/libs/lib/antlr4/include/runtime/Cpp/runtime/src/atn/ATNConfig.cpp	/^const size_t ATNConfig::SUPPRESS_PRECEDENCE_FILTER = 0x40000000;$/;"	m	class:ATNConfig	typeref:typename:const size_t
 SUPPRESS_PRECEDENCE_FILTER	mining/a-team/libs/lib/antlr4/include/runtime/Cpp/runtime/src/atn/ATNConfig.h	/^    static const size_t SUPPRESS_PRECEDENCE_FILTER;$/;"	m	class:antlr4::atn::ATNConfig	typeref:typename:const size_t
 SVA	questa.simulation/Makefile	/^SVA=$(PROJECT).srcs\/assertions\/*.sv$/;"	m
+SVA	questa.simulation/Makefile	/^faultC_bl_master: SVA=$(PROJECT).srcs\/assertions\/bl_master_assertions.sv$/;"	m
+SVA	questa.simulation/Makefile	/^faultC_camellia: SVA=$(PROJECT).srcs\/assertions\/camellia_assertions.sv$/;"	m
+SVA	questa.simulation/Makefile	/^faultC_wishbone: SVA=$(PROJECT).srcs\/assertions\/wishbone_assertions.sv$/;"	m
 SWIG	mining/a-team/libs/lib/spot/include/spot/gen/Makefile	/^SWIG = swig$/;"	m
 SWIG	mining/a-team/libs/lib/spot/include/spot/gen/Makefile.in	/^SWIG = @SWIG@$/;"	m
 SWIG	mining/a-team/libs/lib/spot/include/spot/graph/Makefile	/^SWIG = swig$/;"	m
@@ -19227,11 +19230,6 @@ error_from_bus	simple_platform.srcs/sources_1/new/core_wrapper.v	/^reg        er
 errors	mining/a-team/libs/lib/antlr4/include/runtime/Cpp/runtime/src/atn/DecisionInfo.h	/^    std::vector<ErrorInfo> errors;$/;"	m	class:antlr4::atn::DecisionInfo	typeref:typename:std::vector<ErrorInfo>
 errors	mining/a-team/libs/lib/spot/include/spot/parseaut/public.hh	/^    parse_aut_error_list errors;$/;"	m	struct:spot::parsed_aut	typeref:typename:parse_aut_error_list
 errors	mining/a-team/libs/lib/spot/include/spot/tl/parse.hh	/^    parse_error_list errors;$/;"	m	struct:spot::parsed_formula	typeref:typename:parse_error_list
-es1	simple_platform.srcs/assertions/bl_master_assertions.sv	/^        property es1;$/;"	R
-es2_a	simple_platform.srcs/assertions/bl_master_assertions.sv	/^        property es2_a;$/;"	R
-es2_b	simple_platform.srcs/assertions/bl_master_assertions.sv	/^        property es2_b;$/;"	R
-es2_c	simple_platform.srcs/assertions/bl_master_assertions.sv	/^        property es2_c;$/;"	R
-es2_d	simple_platform.srcs/assertions/bl_master_assertions.sv	/^        property es2_d;$/;"	R
 es3	simple_platform.srcs/assertions/wishbone_assertions.sv	/^        property es3;$/;"	R
 escapeWSAndQuote	mining/a-team/libs/lib/antlr4/include/runtime/Cpp/runtime/src/DefaultErrorStrategy.cpp	/^std::string DefaultErrorStrategy::escapeWSAndQuote(const std::string &s) const {$/;"	f	class:DefaultErrorStrategy	typeref:typename:std::string
 escapeWhitespace	mining/a-team/libs/lib/antlr4/include/runtime/Cpp/runtime/src/support/CPPUtils.cpp	/^  std::string escapeWhitespace(std::string str, bool escapeSpaces) {$/;"	f	namespace:antlrcpp	typeref:typename:std::string
@@ -19360,7 +19358,6 @@ f_func_out	simple_platform.srcs/sources_1/imports/platform/camellia.v	/^  wire [
 f_max	mining/a-team/libs/lib/spot/include/spot/misc/minato.hh	/^      bdd f_min, f_max;$/;"	m	struct:spot::minato_isop::local_vars	typeref:typename:bdd
 f_min	mining/a-team/libs/lib/spot/include/spot/misc/minato.hh	/^      bdd f_min, f_max;$/;"	m	struct:spot::minato_isop::local_vars	typeref:typename:bdd
 failOrAccept	mining/a-team/libs/lib/antlr4/include/runtime/Cpp/runtime/src/atn/LexerATNSimulator.cpp	/^size_t LexerATNSimulator::failOrAccept(CharStream *input, ATNConfigSet *reach, size_t t) {$/;"	f	class:LexerATNSimulator	typeref:typename:size_t
-fail_count	simple_platform.srcs/assertions/wishbone_assertions.sv	/^        static int fail_count=0;$/;"	r
 fair_kripke	mining/a-team/libs/lib/spot/include/spot/kripke/fairkripke.hh	/^    fair_kripke(const bdd_dict_ptr& d)$/;"	f	class:spot::fair_kripke
 fair_kripke	mining/a-team/libs/lib/spot/include/spot/kripke/fairkripke.hh	/^  class SPOT_API fair_kripke: public twa$/;"	c	namespace:spot
 fair_kripke_ptr	mining/a-team/libs/lib/spot/include/spot/kripke/fwd.hh	/^  typedef std::shared_ptr<fair_kripke> fair_kripke_ptr;$/;"	t	namespace:spot	typeref:typename:std::shared_ptr<fair_kripke>
@@ -19374,21 +19371,22 @@ false_builder	mining/a-team/libs/lib/spot/include/spot/tl/randomltl.cc	/^    fal
 fastForward	mining/a-team/libs/lib/spot/include/spot/priv/robin_hood.hh	/^        void fastForward() noexcept {$/;"	f	class:robin_hood::detail::unordered_map::Iter	typeref:typename:void
 fast_forward_tag	mining/a-team/libs/lib/spot/include/spot/priv/robin_hood.hh	/^    struct fast_forward_tag {};$/;"	s	class:robin_hood::detail::unordered_map
 faultC_bl_master	questa.simulation/Makefile	/^faultC_bl_master: FAULTS_LIST=..\/faults\/bl_master_faults.txt$/;"	t
+faultC_bl_master	questa.simulation/Makefile	/^faultC_bl_master: SVA=$(PROJECT).srcs\/assertions\/bl_master_assertions.sv$/;"	t
 faultC_bl_master	questa.simulation/Makefile	/^faultC_bl_master: clean compile_ABV copy_fl check_faults$/;"	t
 faultC_bl_master	vcs.simulation/Makefile	/^faultC_bl_master: FAULTS_LIST=..\/faults\/bl_master_faults.txt$/;"	t
 faultC_bl_master	vcs.simulation/Makefile	/^faultC_bl_master: clean compile_faullt_coverage copy_fl check_faults$/;"	t
-faultC_bl_slave	questa.simulation/Makefile	/^faultC_bl_slave: FAULTS_LIST=..\/faults\/bl_slave_faults.txt$/;"	t
-faultC_bl_slave	questa.simulation/Makefile	/^faultC_bl_slave: clean compile_ABV copy_fl check_faults$/;"	t
 faultC_bl_slave	vcs.simulation/Makefile	/^faultC_bl_slave: FAULTS_LIST=..\/faults\/bl_slave_faults.txt$/;"	t
 faultC_bl_slave	vcs.simulation/Makefile	/^faultC_bl_slave: clean compile_faullt_coverage copy_fl check_faults$/;"	t
 faultC_camellia	questa.simulation/Makefile	/^faultC_camellia: FAULTS_LIST=..\/faults\/camellia_faults.txt$/;"	t
+faultC_camellia	questa.simulation/Makefile	/^faultC_camellia: SVA=$(PROJECT).srcs\/assertions\/camellia_assertions.sv$/;"	t
 faultC_camellia	questa.simulation/Makefile	/^faultC_camellia: clean compile_ABV copy_fl check_faults$/;"	t
 faultC_camellia	vcs.simulation/Makefile	/^faultC_camellia: FAULTS_LIST=..\/faults\/camellia_faults.txt$/;"	t
 faultC_camellia	vcs.simulation/Makefile	/^faultC_camellia: clean compile_faullt_coverage copy_fl check_faults$/;"	t
-faultC_transmitter	questa.simulation/Makefile	/^faultC_transmitter: FAULTS_LIST=..\/faults\/transmitter_faults.txt$/;"	t
-faultC_transmitter	questa.simulation/Makefile	/^faultC_transmitter: clean compile_ABV copy_fl check_faults$/;"	t
 faultC_transmitter	vcs.simulation/Makefile	/^faultC_transmitter: FAULTS_LIST=..\/faults\/transmitter_faults.txt$/;"	t
 faultC_transmitter	vcs.simulation/Makefile	/^faultC_transmitter: clean compile_faullt_coverage copy_fl check_faults$/;"	t
+faultC_wishbone	questa.simulation/Makefile	/^faultC_wishbone: FAULTS_LIST=..\/faults\/wishbone_faults.txt$/;"	t
+faultC_wishbone	questa.simulation/Makefile	/^faultC_wishbone: SVA=$(PROJECT).srcs\/assertions\/wishbone_assertions.sv$/;"	t
+faultC_wishbone	questa.simulation/Makefile	/^faultC_wishbone: clean compile_ABV copy_fl check_faults$/;"	t
 favor_event_univ	mining/a-team/libs/lib/spot/include/spot/tl/simplify.hh	/^    bool favor_event_univ;$/;"	m	class:spot::tl_simplifier_options	typeref:typename:bool
 fc32_rs_fec_v1_0_5	simple_platform.sim/sim_1/behav/questa/modelsim.ini	/^fc32_rs_fec_v1_0_5 = C:\/questasim64_10.7c\/vivado_lib\/fc32_rs_fec_v1_0_5$/;"	k	section:Library
 fd	mining/a-team/libs/lib/spot/include/spot/misc/tmpfile.hh	/^    int fd() const$/;"	f	class:spot::open_temporary_file	typeref:typename:int
@@ -23289,6 +23287,19 @@ owner_	mining/a-team/libs/lib/spot/include/spot/misc/game.hh	/^  const std::vect
 p	mining/a-team/libs/lib/antlr4/include/runtime/Cpp/runtime/src/ANTLRInputStream.h	/^    size_t p;$/;"	m	class:antlr4::ANTLRInputStream	typeref:typename:size_t
 p	mining/a-team/libs/lib/spot/include/spot/twaalgos/magic.cc	/^        color *p;$/;"	m	class:spot::__anon93880bbc0111::explicit_magic_search_heap::color_ref	typeref:typename:color *	file:
 p	mining/a-team/libs/lib/spot/include/spot/twaalgos/tau03.cc	/^        color *p;$/;"	m	class:spot::__anon25db4fc80111::explicit_tau03_search_heap::color_ref	typeref:typename:color *	file:
+p0	simple_platform.srcs/assertions/bl_master_assertions.sv	/^        property p0;$/;"	R
+p0	simple_platform.srcs/assertions/camellia_assertions.sv	/^		property p0;$/;"	R
+p0	simple_platform.srcs/assertions/camellia_assertions.sv	/^	p0: assert property (clk_cone1.p0);$/;"	A
+p1	simple_platform.srcs/assertions/bl_master_assertions.sv	/^        property p1;$/;"	R
+p1	simple_platform.srcs/assertions/camellia_assertions.sv	/^		property p1;$/;"	R
+p1	simple_platform.srcs/assertions/camellia_assertions.sv	/^	p1: assert property (clk_cone1.p1);$/;"	A
+p2	simple_platform.srcs/assertions/bl_master_assertions.sv	/^        property p2;$/;"	R
+p2	simple_platform.srcs/assertions/camellia_assertions.sv	/^		property p2;$/;"	R
+p2	simple_platform.srcs/assertions/camellia_assertions.sv	/^	p2: assert property (clk_cone1.p2);$/;"	A
+p3	simple_platform.srcs/assertions/bl_master_assertions.sv	/^        property p3;$/;"	R
+p3	simple_platform.srcs/assertions/camellia_assertions.sv	/^		property p3;$/;"	R
+p3	simple_platform.srcs/assertions/camellia_assertions.sv	/^	p3: assert property (clk_cone1.p3);$/;"	A
+p4	simple_platform.srcs/assertions/bl_master_assertions.sv	/^        property p4;$/;"	R
 p_	mining/a-team/libs/lib/spot/include/spot/kripke/kripkegraph.hh	/^    edge p_;$/;"	m	class:spot::kripke_graph_succ_iterator	typeref:typename:edge
 p_	mining/a-team/libs/lib/spot/include/spot/twa/twagraph.hh	/^    edge p_;$/;"	m	class:spot::twa_graph_succ_iterator	typeref:typename:edge
 p_pattern	mining/a-team/libs/lib/spot/include/spot/gen/formulas.cc	/^      p_pattern(int n)$/;"	f	namespace:spot::gen::__anonfc81acbc0111	typeref:typename:formula	file:
@@ -23381,7 +23392,6 @@ partial_degeneralize	mining/a-team/libs/lib/spot/include/spot/twaalgos/degen.cc	
 partial_eval	mining/a-team/libs/lib/spot/include/spot/twa/acc.cc	/^    partial_eval(acc_cond::mark_t infinitely_often,$/;"	f	namespace:spot::__anone49ad30c0111	typeref:typename:trival	file:
 partition_t	mining/a-team/libs/lib/spot/include/spot/taalgos/minimize.cc	/^  typedef std::list<hash_set*> partition_t;$/;"	t	namespace:spot	typeref:typename:std::list<hash_set * >	file:
 partition_t	mining/a-team/libs/lib/spot/include/spot/twaalgos/minimize.cc	/^      typedef std::list<hash_set*> partition_t;$/;"	t	function:spot::__anon29bbbc1d0111::minimize_dfa	typeref:typename:std::list<hash_set * >	file:
-pass_count	simple_platform.srcs/assertions/wishbone_assertions.sv	/^        static int pass_count=0;$/;"	r
 path	mining/a-team/libs/lib/spot/include/spot/twaalgos/dtbasat.cc	/^      path(int src_ref)$/;"	f	struct:spot::__anon3a720f1e0111::path	file:
 path	mining/a-team/libs/lib/spot/include/spot/twaalgos/dtbasat.cc	/^      path(int src_ref, int dst_ref)$/;"	f	struct:spot::__anon3a720f1e0111::path	file:
 path	mining/a-team/libs/lib/spot/include/spot/twaalgos/dtbasat.cc	/^    struct path$/;"	s	namespace:spot::__anon3a720f1e0111	file:

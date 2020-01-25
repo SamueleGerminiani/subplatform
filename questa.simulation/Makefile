@@ -35,7 +35,8 @@ help:
 	@echo  " faultC_bl_master       => Performs: clean, and fault coverage for buslayer (master)   "
 #	@echo  " faultC_bl_slave        => Performs: clean, and fault coverage for buslayer (slave)    "
 	@echo  " faultC_camellia        => Performs: clean, and fault coverage for camellia            "
-	@echo  " faultC_transmitter     => Performs: clean, and fault coverage for transmitter         "
+#	@echo  " faultC_transmitter     => Performs: clean, and fault coverage for transmitter         "
+	@echo  " faultC_wishbone     => Performs: clean, and fault coverage for transmitter         "
 	@echo  "                                                                                       "
 	@echo  " --- TARGETS ---------------------------------------------------------------------------"
 	@echo  " check_faults           => Performs: fault-coverage with faults.txt file               "
@@ -152,15 +153,16 @@ mining_camellia: clean compile_s run_s assertion_mining
 ABV: clean compile_ABV run_ABV
 
 faultC_bl_master: FAULTS_LIST=../faults/bl_master_faults.txt
+faultC_bl_master: SVA=$(PROJECT).srcs/assertions/bl_master_assertions.sv
 faultC_bl_master: clean compile_ABV copy_fl check_faults
 
-faultC_bl_slave: FAULTS_LIST=../faults/bl_slave_faults.txt
-faultC_bl_slave: clean compile_ABV copy_fl check_faults
+faultC_wishbone: FAULTS_LIST=../faults/wishbone_faults.txt
+faultC_wishbone: SVA=$(PROJECT).srcs/assertions/wishbone_assertions.sv
+faultC_wishbone: clean compile_ABV copy_fl check_faults
 
 faultC_camellia: FAULTS_LIST=../faults/camellia_faults.txt
+faultC_camellia: SVA=$(PROJECT).srcs/assertions/camellia_assertions.sv
 faultC_camellia: clean compile_ABV copy_fl check_faults
 
-faultC_transmitter: FAULTS_LIST=../faults/transmitter_faults.txt
-faultC_transmitter: clean compile_ABV copy_fl check_faults
 
 .PHONY: help clean copy_fl
