@@ -16,16 +16,8 @@ checker BusCheck(clk, reset,wb_we_m, wb_cyc_m, wb_stb, wb_ack_s,wb_stall_s);
 
         //Write cycle: master -> slave
         property es3;
-            //When the condition changes from false to true: new write cycle
-            (!(wb_we_m && wb_cyc_m && wb_stb) ##1 (wb_we_m && wb_cyc_m && wb_stb))
-            //then 1 clock tick later
-            |=> (
-                //Slave consumes data immediatly
-                (wb_ack_s[0] || wb_ack_s[1]) 
-                or
-                //Slave does not consumes data immediatly
-                (wb_stall_s[0] || wb_stall_s[1])
-            );
+		'b1
+		//Complete here
         endproperty
 
     endclocking

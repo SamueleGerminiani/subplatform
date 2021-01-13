@@ -814,6 +814,8 @@ BufferedTokenStream	mining/a-team/libs/lib/antlr4/include/runtime/Cpp/runtime/sr
 BulkPoolAllocator	mining/a-team/libs/lib/spot/include/spot/priv/robin_hood.hh	/^    BulkPoolAllocator(BulkPoolAllocator&& o) noexcept$/;"	f	class:robin_hood::detail::BulkPoolAllocator
 BulkPoolAllocator	mining/a-team/libs/lib/spot/include/spot/priv/robin_hood.hh	/^    BulkPoolAllocator(const BulkPoolAllocator& ROBIN_HOOD_UNUSED(o) \/*unused*\/) noexcept$/;"	f	class:robin_hood::detail::BulkPoolAllocator
 BulkPoolAllocator	mining/a-team/libs/lib/spot/include/spot/priv/robin_hood.hh	/^class BulkPoolAllocator {$/;"	c	namespace:robin_hood::detail
+BusCheck	simple_platform.srcs/assertions/wishbone_assertions.sv	/^checker BusCheck(clk, reset,wb_we_m, wb_cyc_m, wb_stb, wb_ack_s,wb_stall_s);$/;"	H
+Buscheck_clocking	simple_platform.srcs/assertions/wishbone_assertions.sv	/^    clocking Buscheck_clocking @(posedge clk);$/;"	L	checker:BusCheck
 C	mining/a-team/libs/lib/spot/include/spot/tl/formula.cc	/^#define C(/;"	d	file:
 CAMELLIA	simple_platform.srcs/assertions/camellia_assertions.sv	/^`define CAMELLIA sim1.p.slave_0.camallia_u$/;"	c
 CAMELLIA_BASE	simple_platform.srcs/sources_1/new/camellia_wrapper.v	/^`define CAMELLIA_BASE 32'h0$/;"	c
@@ -1463,11 +1465,13 @@ Dout	simple_platform.srcs/sources_1/imports/platform/camellia.v	/^  output reg [
 Dout_reg	simple_platform.srcs/sources_1/imports/platform/camellia.v	/^  reg [127:0] 	 Dout_reg;$/;"	r	module:Camellia_randomize
 DpiCppPath	modelsim.ini	/^DpiCppPath = \/usr\/bin\/gcc$/;"	k	section:vsim
 DpiCppPath	questa.simulation/modelsim.ini	/^DpiCppPath = \/usr\/bin\/gcc$/;"	k	section:vsim
+Drdy	simple_platform.srcs/assertions/camellia_assertions.sv	/^checker camellia_checker(wb_clk, Krdy, Kvld, EncDec, Drdy, Dvld);$/;"	p	checker:camellia_checker
 Drdy	simple_platform.srcs/sources_1/imports/platform/camellia.v	/^  input         Drdy, Krdy;$/;"	p	module:camellia
 Drdy	simple_platform.srcs/sources_1/imports/platform/camellia.v	/^  input  Drdy, Krdy;$/;"	p	module:Camellia_sequencer
 DumpportsCollapse	modelsim.ini	/^DumpportsCollapse = 1$/;"	k	section:vsim
 DumpportsCollapse	questa.simulation/modelsim.ini	/^DumpportsCollapse = 1$/;"	k	section:vsim
 DumpportsCollapse	simple_platform.sim/sim_1/behav/questa/modelsim.ini	/^DumpportsCollapse = 1$/;"	k	section:vsim
+Dvld	simple_platform.srcs/assertions/camellia_assertions.sv	/^checker camellia_checker(wb_clk, Krdy, Kvld, EncDec, Drdy, Dvld);$/;"	p	checker:camellia_checker
 Dvld	simple_platform.srcs/sources_1/imports/platform/camellia.v	/^  output reg BSY, Kvld, Dvld;$/;"	p	module:camellia
 Dvld_reg	simple_platform.srcs/sources_1/imports/platform/camellia.v	/^  reg Dvld_reg, Kvld_reg;$/;"	r	module:camellia
 ECHO_C	mining/a-team/libs/lib/spot/include/spot/gen/Makefile	/^ECHO_C = $/;"	m
@@ -1749,6 +1753,7 @@ Enc	simple_platform.srcs/sources_1/imports/platform/camellia.v	/^  parameter Enc
 Enc	simple_platform.srcs/sources_1/imports/platform/camellia.v	/^  parameter Enc = 1'b0;$/;"	c	module:Camellia_key_scheduler
 Enc	simple_platform.srcs/sources_1/imports/platform/camellia.v	/^  parameter Enc = 1'b0;$/;"	c	module:Camellia_randomize
 Enc	simple_platform.srcs/sources_1/imports/platform/camellia.v	/^  parameter Enc = 1'b0;$/;"	c	module:Camellia_sequencer
+EncDec	simple_platform.srcs/assertions/camellia_assertions.sv	/^checker camellia_checker(wb_clk, Krdy, Kvld, EncDec, Drdy, Dvld);$/;"	p	checker:camellia_checker
 EncDec	simple_platform.srcs/sources_1/imports/platform/camellia.v	/^  input 	 EncDec;$/;"	p	module:Camellia_key_scheduler
 EncDec	simple_platform.srcs/sources_1/imports/platform/camellia.v	/^  input 	 EncDec;$/;"	p	module:Camellia_randomize
 EncDec	simple_platform.srcs/sources_1/imports/platform/camellia.v	/^  input         EncDec;$/;"	p	module:camellia
@@ -9921,8 +9926,10 @@ KX	mining/a-team/libs/lib/spot/include/spot/tl/print.cc	/^      KX,$/;"	e	enum:s
 KXor	mining/a-team/libs/lib/spot/include/spot/tl/print.cc	/^      KXor,$/;"	e	enum:spot::__anonb3737ea60111::keyword	file:
 Kin	simple_platform.srcs/sources_1/imports/platform/camellia.v	/^  input [127:0]  Din, Kin;$/;"	p	module:Camellia_randomize
 Kin	simple_platform.srcs/sources_1/imports/platform/camellia.v	/^  input [127:0] Din, Kin;$/;"	p	module:camellia
+Krdy	simple_platform.srcs/assertions/camellia_assertions.sv	/^checker camellia_checker(wb_clk, Krdy, Kvld, EncDec, Drdy, Dvld);$/;"	p	checker:camellia_checker
 Krdy	simple_platform.srcs/sources_1/imports/platform/camellia.v	/^  input         Drdy, Krdy;$/;"	p	module:camellia
 Krdy	simple_platform.srcs/sources_1/imports/platform/camellia.v	/^  input  Drdy, Krdy;$/;"	p	module:Camellia_sequencer
+Kvld	simple_platform.srcs/assertions/camellia_assertions.sv	/^checker camellia_checker(wb_clk, Krdy, Kvld, EncDec, Drdy, Dvld);$/;"	p	checker:camellia_checker
 Kvld	simple_platform.srcs/sources_1/imports/platform/camellia.v	/^  output reg BSY, Kvld, Dvld;$/;"	p	module:camellia
 Kvld_reg	simple_platform.srcs/sources_1/imports/platform/camellia.v	/^  reg Dvld_reg, Kvld_reg;$/;"	r	module:camellia
 LA	mining/a-team/libs/lib/antlr4/include/runtime/Cpp/runtime/src/ANTLRInputStream.cpp	/^size_t ANTLRInputStream::LA(ssize_t i) {$/;"	f	class:ANTLRInputStream	typeref:typename:size_t
@@ -10824,6 +10831,8 @@ Makefile	mining/a-team/libs/lib/spot/include/spot/ta/Makefile	/^Makefile: $(srcd
 Makefile	mining/a-team/libs/lib/spot/include/spot/ta/Makefile.in	/^Makefile: $(srcdir)\/Makefile.in $(top_builddir)\/config.status$/;"	t
 Makefile	mining/a-team/libs/lib/spot/include/spot/taalgos/Makefile	/^Makefile: $(srcdir)\/Makefile.in $(top_builddir)\/config.status$/;"	t
 Makefile	mining/a-team/libs/lib/spot/include/spot/taalgos/Makefile.in	/^Makefile: $(srcdir)\/Makefile.in $(top_builddir)\/config.status$/;"	t
+MasterBusCheck	simple_platform.srcs/assertions/bl_master_assertions.sv	/^checker MasterBusCheck(clk,reset,busy,request,wb_we,write,wb_adr,address, wb_dat_o,data_to_bus, /;"	H
+MasterBusCheck_clocking	simple_platform.srcs/assertions/bl_master_assertions.sv	/^    clocking MasterBusCheck_clocking @(posedge clk);$/;"	L	checker:MasterBusCheck
 Medium	mining/a-team/libs/lib/spot/include/spot/twaalgos/postproc.hh	/^    enum optimization_level { Low, Medium, High };$/;"	e	enum:spot::postprocessor::optimization_level
 Mix	mining/a-team/libs/lib/spot/include/spot/priv/robin_hood.hh	/^        using Mix =$/;"	t	function:robin_hood::detail::unordered_map::keyToIdx
 Monitor	mining/a-team/libs/lib/spot/include/spot/twaalgos/postproc.hh	/^                       Monitor = 2,$/;"	e	enum:spot::postprocessor::output_type
@@ -16260,6 +16269,7 @@ add_state	mining/a-team/libs/lib/spot/include/spot/twaalgos/totgba.cc	/^      ad
 add_state_set	mining/a-team/libs/lib/spot/include/spot/twa/taatgba.hh	/^    taa_tgba::state_set* add_state_set(const std::vector<label>& names)$/;"	f	class:spot::taa_tgba_labelled	typeref:typename:taa_tgba::state_set *
 add_to_initial_states_set	mining/a-team/libs/lib/spot/include/spot/ta/taexplicit.cc	/^  ta_explicit::add_to_initial_states_set(state* state, bdd condition)$/;"	f	class:spot::ta_explicit	typeref:typename:void
 add_transition	mining/a-team/libs/lib/spot/include/spot/ta/taexplicit.cc	/^  state_ta_explicit::add_transition(state_ta_explicit::transition* t,$/;"	f	class:spot::state_ta_explicit	typeref:typename:void
+address	simple_platform.srcs/assertions/bl_master_assertions.sv	/^checker MasterBusCheck(clk,reset,busy,request,wb_we,write,wb_adr,address, wb_dat_o,data_to_bus, /;"	p	checker:MasterBusCheck
 address	simple_platform.srcs/sources_1/new/buslayer_master.sv	/^    input  logic [31:0] address,$/;"	p	module:buslayer_master
 address	simple_platform.srcs/sources_1/new/buslayer_slave.sv	/^    output logic [31:0] address,$/;"	p	module:buslayer_slave
 address	simple_platform.srcs/sources_1/new/core_wrapper.v	/^reg [31:0] address;        \/\/ the address written in the bus$/;"	r	task:core_wrapper.run_testbench
@@ -17863,8 +17873,10 @@ bunop	mining/a-team/libs/lib/spot/include/spot/tl/formula.hh	/^    static formul
 bunop_bool_bounded_builder	mining/a-team/libs/lib/spot/include/spot/tl/randomltl.cc	/^    bunop_bool_bounded_builder(const random_formula* rl, int n)$/;"	f	namespace:spot::__anona18f61c60111	typeref:typename:formula	file:
 bunop_bounded_builder	mining/a-team/libs/lib/spot/include/spot/tl/randomltl.cc	/^    bunop_bounded_builder(const random_formula* rl, int n)$/;"	f	namespace:spot::__anona18f61c60111	typeref:typename:formula	file:
 bunop_unbounded_builder	mining/a-team/libs/lib/spot/include/spot/tl/randomltl.cc	/^    bunop_unbounded_builder(const random_formula* rl, int n)$/;"	f	namespace:spot::__anona18f61c60111	typeref:typename:formula	file:
+bus_checker_instance	simple_platform.srcs/assertions/wishbone_assertions.sv	/^bind `WISHBONE BusCheck bus_checker_instance(`WISHBONE.sysClk,`WISHBONE.sysRst, `WISHBONE.wb_we_/;"	i	property:BusCheck.Buscheck_clocking.es3
 buslayer_master	simple_platform.srcs/sources_1/new/buslayer_master.sv	/^module buslayer_master ($/;"	m
 buslayer_slave	simple_platform.srcs/sources_1/new/buslayer_slave.sv	/^module buslayer_slave($/;"	m
+busy	simple_platform.srcs/assertions/bl_master_assertions.sv	/^checker MasterBusCheck(clk,reset,busy,request,wb_we,write,wb_adr,address, wb_dat_o,data_to_bus, /;"	p	checker:MasterBusCheck
 busy	simple_platform.srcs/sources_1/new/buslayer_master.sv	/^    output logic        busy,$/;"	p	module:buslayer_master
 busy	simple_platform.srcs/sources_1/new/core_wrapper.v	/^reg        busy;           \/\/$/;"	r	task:core_wrapper.run_testbench
 bv_equal	mining/a-team/libs/lib/spot/include/spot/twaalgos/powerset.cc	/^    struct bv_equal$/;"	s	namespace:spot::__anond02ce5540111	file:
@@ -17877,6 +17889,7 @@ bypassAltsAtnCache	mining/a-team/libs/lib/antlr4/include/runtime/Cpp/runtime/src
 bypassTokenType	mining/a-team/libs/lib/antlr4/include/runtime/Cpp/runtime/src/tree/pattern/RuleTagToken.h	/^    const size_t bypassTokenType;$/;"	m	class:antlr4::tree::pattern::RuleTagToken	typeref:typename:const size_t
 byteSelIn	simple_platform.srcs/sources_1/new/core_wrapper.v	/^                      input byte byteSelIn, output byte errorOut);$/;"	p	task:core_wrapper.run_testbench.write_transaction.write_transaction
 byteSelIn	simple_platform.srcs/sources_1/new/core_wrapper.v	/^task read_transaction(input int addressIn, input int byteSelIn, $/;"	p	task:core_wrapper.run_testbench.write_transaction.read_transaction.read_transaction
+byte_sel	simple_platform.srcs/assertions/bl_master_assertions.sv	/^checker MasterBusCheck(clk,reset,busy,request,wb_we,write,wb_adr,address, wb_dat_o,data_to_bus, /;"	p	checker:MasterBusCheck
 byte_sel	simple_platform.srcs/sources_1/new/buslayer_master.sv	/^    input  logic [3:0]  byte_sel,$/;"	p	module:buslayer_master
 byte_sel	simple_platform.srcs/sources_1/new/buslayer_slave.sv	/^    output logic [3:0]  byte_sel,$/;"	p	module:buslayer_slave
 c	mining/a-team/libs/lib/spot/include/spot/tl/relabel.cc	/^      fset& c;$/;"	m	class:spot::__anon320c11b00311::bse_relabeler	typeref:typename:fset &	file:
@@ -17909,6 +17922,8 @@ calculateHashCode	mining/a-team/libs/lib/antlr4/include/runtime/Cpp/runtime/src/
 call_	mining/a-team/libs/lib/spot/include/spot/misc/formater.hh	/^    std::vector<const printable*> call_;$/;"	m	class:spot::formater	typeref:typename:std::vector<const printable * >
 callback_context	mining/a-team/libs/lib/spot/include/spot/ltsmin/ltsmin.cc	/^    struct callback_context$/;"	s	namespace:spot::__anon9073d1a70211	file:
 camellia	simple_platform.srcs/sources_1/imports/platform/camellia.v	/^module camellia( Kin, Din, Dout, Krdy, Drdy, EncDec, RSTn, EN, CLK, BSY, Kvld, Dvld );$/;"	m
+camellia_checker	simple_platform.srcs/assertions/camellia_assertions.sv	/^checker camellia_checker(wb_clk, Krdy, Kvld, EncDec, Drdy, Dvld);$/;"	H
+camellia_checker_instance	simple_platform.srcs/assertions/camellia_assertions.sv	/^bind `CAMELLIA camellia_checker camellia_checker_instance(sim1.p.slave_0.slave_interface.wb_clk,/;"	i	property:camellia_checker.clk_cone1.p0.p1.p2.p3
 camellia_wrapper	simple_platform.srcs/sources_1/new/camellia_wrapper.v	/^module camellia_wrapper($/;"	m
 canDropLoopEntryEdgeInLeftRecursiveRule	mining/a-team/libs/lib/antlr4/include/runtime/Cpp/runtime/src/atn/ParserATNSimulator.cpp	/^bool ParserATNSimulator::canDropLoopEntryEdgeInLeftRecursiveRule(ATNConfig *config) const {$/;"	f	class:ParserATNSimulator	typeref:typename:bool
 can_v5_0_18	simple_platform.sim/sim_1/behav/questa/modelsim.ini	/^can_v5_0_18 = C:\/questasim64_10.7c\/vivado_lib\/can_v5_0_18$/;"	k	section:Library
@@ -18127,7 +18142,10 @@ clear_caches	mining/a-team/libs/lib/spot/include/spot/tl/simplify.cc	/^  tl_simp
 clear_caches	mining/a-team/libs/lib/spot/include/spot/twaalgos/translate.cc	/^  void translator::clear_caches()$/;"	f	class:spot::translator	typeref:typename:void
 clear_rem	mining/a-team/libs/lib/spot/include/spot/twaalgos/gtec/sccstack.cc	/^  scc_stack::clear_rem()$/;"	f	class:spot::scc_stack	typeref:typename:unsigned
 clear_todo	mining/a-team/libs/lib/spot/include/spot/twaalgos/gtec/gtec.cc	/^  couvreur99_check_shy::clear_todo()$/;"	f	class:spot::couvreur99_check_shy	typeref:typename:void
+clk	simple_platform.srcs/assertions/bl_master_assertions.sv	/^checker MasterBusCheck(clk,reset,busy,request,wb_we,write,wb_adr,address, wb_dat_o,data_to_bus, /;"	p	checker:MasterBusCheck
+clk	simple_platform.srcs/assertions/wishbone_assertions.sv	/^checker BusCheck(clk, reset,wb_we_m, wb_cyc_m, wb_stb, wb_ack_s,wb_stall_s);$/;"	p	checker:BusCheck
 clk	simple_platform.srcs/sources_1/new/simple_platform.sv	/^logic         clk           [NUM_SLAVE:0];$/;"	r	module:simple_platform
+clk_cone1	simple_platform.srcs/assertions/camellia_assertions.sv	/^	clocking clk_cone1 @(posedge wb_clk);$/;"	L	checker:camellia_checker
 clk_vip_v1_0_0	simple_platform.sim/sim_1/behav/questa/modelsim.ini	/^clk_vip_v1_0_0 = C:\/questasim64_10.7c\/vivado_lib\/clk_vip_v1_0_0$/;"	k	section:Library
 clock	mining/a-team/libs/lib/spot/include/spot/misc/timer.hh	/^    typedef std::chrono::high_resolution_clock clock;$/;"	t	struct:spot::stopwatch	typeref:typename:std::chrono::high_resolution_clock
 clone	mining/a-team/libs/lib/antlr4/include/runtime/Cpp/runtime/src/support/Any.h	/^    Base* clone() const {$/;"	f	struct:antlrcpp::Any::Derived	typeref:typename:Base *
@@ -18556,6 +18574,7 @@ data_from_bus	simple_platform.srcs/sources_1/new/core_wrapper.v	/^reg [31:0] dat
 data_from_bus	simple_platform.srcs/sources_1/new/simple_platform.sv	/^logic [31:0]  data_from_bus [NUM_SLAVE:0];$/;"	r	module:simple_platform
 data_t	mining/a-team/libs/lib/spot/include/spot/graph/graph.hh	/^      typedef Data data_t;$/;"	t	struct:spot::internal::boxed_label	typeref:typename:Data
 data_t	mining/a-team/libs/lib/spot/include/spot/graph/graph.hh	/^      typedef std::tuple<> data_t;$/;"	t	struct:spot::internal::boxed_label	typeref:typename:std::tuple<>
+data_to_bus	simple_platform.srcs/assertions/bl_master_assertions.sv	/^checker MasterBusCheck(clk,reset,busy,request,wb_we,write,wb_adr,address, wb_dat_o,data_to_bus, /;"	p	checker:MasterBusCheck
 data_to_bus	simple_platform.srcs/sources_1/new/buslayer_master.sv	/^    input  logic [31:0] data_to_bus,$/;"	p	module:buslayer_master
 data_to_bus	simple_platform.srcs/sources_1/new/buslayer_slave.sv	/^    input  logic [31:0] data_to_bus,$/;"	p	module:buslayer_slave
 data_to_bus	simple_platform.srcs/sources_1/new/core_wrapper.v	/^reg [31:0] data_to_bus;    \/\/ the data written in the bus$/;"	r	task:core_wrapper.run_testbench
@@ -19230,7 +19249,7 @@ error_from_bus	simple_platform.srcs/sources_1/new/core_wrapper.v	/^reg        er
 errors	mining/a-team/libs/lib/antlr4/include/runtime/Cpp/runtime/src/atn/DecisionInfo.h	/^    std::vector<ErrorInfo> errors;$/;"	m	class:antlr4::atn::DecisionInfo	typeref:typename:std::vector<ErrorInfo>
 errors	mining/a-team/libs/lib/spot/include/spot/parseaut/public.hh	/^    parse_aut_error_list errors;$/;"	m	struct:spot::parsed_aut	typeref:typename:parse_aut_error_list
 errors	mining/a-team/libs/lib/spot/include/spot/tl/parse.hh	/^    parse_error_list errors;$/;"	m	struct:spot::parsed_formula	typeref:typename:parse_error_list
-es3	simple_platform.srcs/assertions/wishbone_assertions.sv	/^        property es3;$/;"	R
+es3	simple_platform.srcs/assertions/wishbone_assertions.sv	/^        property es3;$/;"	R	clocking:BusCheck.Buscheck_clocking
 escapeWSAndQuote	mining/a-team/libs/lib/antlr4/include/runtime/Cpp/runtime/src/DefaultErrorStrategy.cpp	/^std::string DefaultErrorStrategy::escapeWSAndQuote(const std::string &s) const {$/;"	f	class:DefaultErrorStrategy	typeref:typename:std::string
 escapeWhitespace	mining/a-team/libs/lib/antlr4/include/runtime/Cpp/runtime/src/support/CPPUtils.cpp	/^  std::string escapeWhitespace(std::string str, bool escapeSpaces) {$/;"	f	namespace:antlrcpp	typeref:typename:std::string
 escape_for_output	mining/a-team/libs/lib/spot/include/spot/twaalgos/dot.cc	/^      escape_for_output(std::ostream& os, const std::string& s) const$/;"	f	class:spot::__anon073070a20111::dotty_output	typeref:typename:std::ostream &	file:
@@ -22224,6 +22243,7 @@ mask_acc_sets	mining/a-team/libs/lib/spot/include/spot/twaalgos/mask.cc	/^  twa_
 mask_keep_accessible_states	mining/a-team/libs/lib/spot/include/spot/twaalgos/mask.cc	/^  twa_graph_ptr mask_keep_accessible_states(const const_twa_graph_ptr& in,$/;"	f	namespace:spot	typeref:typename:twa_graph_ptr
 mask_keep_states	mining/a-team/libs/lib/spot/include/spot/twaalgos/mask.cc	/^  twa_graph_ptr mask_keep_states(const const_twa_graph_ptr& in,$/;"	f	namespace:spot	typeref:typename:twa_graph_ptr
 master	simple_platform.srcs/sources_1/imports/new/wishbone_interface.sv	/^modport master (input wb_ack, wb_err, wb_stall, wb_dat_i,$/;"	M	interface:wishbone_interface
+masterBus_checker_instance	simple_platform.srcs/assertions/bl_master_assertions.sv	/^bind `BUSLAYER_MASTER MasterBusCheck masterBus_checker_instance(`BUSLAYER_MASTER.wb_clk,`BUSLAYE/;"	i	property:MasterBusCheck.MasterBusCheck_clocking.p0.p1.p2.p3.p4
 match	mining/a-team/libs/lib/antlr4/include/runtime/Cpp/runtime/src/Parser.cpp	/^Token* Parser::match(size_t ttype) {$/;"	f	class:Parser	typeref:typename:Token *
 match	mining/a-team/libs/lib/antlr4/include/runtime/Cpp/runtime/src/atn/LexerATNSimulator.cpp	/^size_t LexerATNSimulator::match(CharStream *input, size_t mode) {$/;"	f	class:LexerATNSimulator	typeref:typename:size_t
 match	mining/a-team/libs/lib/antlr4/include/runtime/Cpp/runtime/src/tree/pattern/ParseTreePattern.cpp	/^ParseTreeMatch ParseTreePattern::match(ParseTree *tree) {$/;"	f	class:ParseTreePattern	typeref:typename:ParseTreeMatch
@@ -23287,19 +23307,19 @@ owner_	mining/a-team/libs/lib/spot/include/spot/misc/game.hh	/^  const std::vect
 p	mining/a-team/libs/lib/antlr4/include/runtime/Cpp/runtime/src/ANTLRInputStream.h	/^    size_t p;$/;"	m	class:antlr4::ANTLRInputStream	typeref:typename:size_t
 p	mining/a-team/libs/lib/spot/include/spot/twaalgos/magic.cc	/^        color *p;$/;"	m	class:spot::__anon93880bbc0111::explicit_magic_search_heap::color_ref	typeref:typename:color *	file:
 p	mining/a-team/libs/lib/spot/include/spot/twaalgos/tau03.cc	/^        color *p;$/;"	m	class:spot::__anon25db4fc80111::explicit_tau03_search_heap::color_ref	typeref:typename:color *	file:
-p0	simple_platform.srcs/assertions/bl_master_assertions.sv	/^        property p0;$/;"	R
-p0	simple_platform.srcs/assertions/camellia_assertions.sv	/^		property p0;$/;"	R
-p0	simple_platform.srcs/assertions/camellia_assertions.sv	/^	p0: assert property (clk_cone1.p0);$/;"	A
-p1	simple_platform.srcs/assertions/bl_master_assertions.sv	/^        property p1;$/;"	R
-p1	simple_platform.srcs/assertions/camellia_assertions.sv	/^		property p1;$/;"	R
-p1	simple_platform.srcs/assertions/camellia_assertions.sv	/^	p1: assert property (clk_cone1.p1);$/;"	A
-p2	simple_platform.srcs/assertions/bl_master_assertions.sv	/^        property p2;$/;"	R
-p2	simple_platform.srcs/assertions/camellia_assertions.sv	/^		property p2;$/;"	R
-p2	simple_platform.srcs/assertions/camellia_assertions.sv	/^	p2: assert property (clk_cone1.p2);$/;"	A
-p3	simple_platform.srcs/assertions/bl_master_assertions.sv	/^        property p3;$/;"	R
-p3	simple_platform.srcs/assertions/camellia_assertions.sv	/^		property p3;$/;"	R
-p3	simple_platform.srcs/assertions/camellia_assertions.sv	/^	p3: assert property (clk_cone1.p3);$/;"	A
-p4	simple_platform.srcs/assertions/bl_master_assertions.sv	/^        property p4;$/;"	R
+p0	simple_platform.srcs/assertions/bl_master_assertions.sv	/^        property p0;$/;"	R	clocking:MasterBusCheck.MasterBusCheck_clocking
+p0	simple_platform.srcs/assertions/camellia_assertions.sv	/^		property p0;$/;"	R	clocking:camellia_checker.clk_cone1
+p0	simple_platform.srcs/assertions/camellia_assertions.sv	/^	p0: assert property (clk_cone1.p0);$/;"	A	property:camellia_checker.clk_cone1.p0.p1.p2.p3
+p1	simple_platform.srcs/assertions/bl_master_assertions.sv	/^        property p1;$/;"	R	property:MasterBusCheck.MasterBusCheck_clocking.p0
+p1	simple_platform.srcs/assertions/camellia_assertions.sv	/^		property p1;$/;"	R	property:camellia_checker.clk_cone1.p0
+p1	simple_platform.srcs/assertions/camellia_assertions.sv	/^	p1: assert property (clk_cone1.p1);$/;"	A	property:camellia_checker.clk_cone1.p0.p1.p2.p3
+p2	simple_platform.srcs/assertions/bl_master_assertions.sv	/^        property p2;$/;"	R	property:MasterBusCheck.MasterBusCheck_clocking.p0.p1
+p2	simple_platform.srcs/assertions/camellia_assertions.sv	/^		property p2;$/;"	R	property:camellia_checker.clk_cone1.p0.p1
+p2	simple_platform.srcs/assertions/camellia_assertions.sv	/^	p2: assert property (clk_cone1.p2);$/;"	A	property:camellia_checker.clk_cone1.p0.p1.p2.p3
+p3	simple_platform.srcs/assertions/bl_master_assertions.sv	/^        property p3;$/;"	R	property:MasterBusCheck.MasterBusCheck_clocking.p0.p1.p2
+p3	simple_platform.srcs/assertions/camellia_assertions.sv	/^		property p3;$/;"	R	property:camellia_checker.clk_cone1.p0.p1.p2
+p3	simple_platform.srcs/assertions/camellia_assertions.sv	/^	p3: assert property (clk_cone1.p3);$/;"	A	property:camellia_checker.clk_cone1.p0.p1.p2.p3
+p4	simple_platform.srcs/assertions/bl_master_assertions.sv	/^        property p4;$/;"	R	property:MasterBusCheck.MasterBusCheck_clocking.p0.p1.p2.p3
 p_	mining/a-team/libs/lib/spot/include/spot/kripke/kripkegraph.hh	/^    edge p_;$/;"	m	class:spot::kripke_graph_succ_iterator	typeref:typename:edge
 p_	mining/a-team/libs/lib/spot/include/spot/twa/twagraph.hh	/^    edge p_;$/;"	m	class:spot::twa_graph_succ_iterator	typeref:typename:edge
 p_pattern	mining/a-team/libs/lib/spot/include/spot/gen/formulas.cc	/^      p_pattern(int n)$/;"	f	namespace:spot::gen::__anonfc81acbc0111	typeref:typename:formula	file:
@@ -24275,6 +24295,7 @@ report_too_many_children	mining/a-team/libs/lib/spot/include/spot/tl/formula.cc	
 report_too_many_sets	mining/a-team/libs/lib/spot/include/spot/twa/acc.cc	/^  void acc_cond::report_too_many_sets()$/;"	f	class:spot::acc_cond	typeref:typename:void
 report_unused_options	mining/a-team/libs/lib/spot/include/spot/misc/optionmap.cc	/^  void option_map::report_unused_options() const$/;"	f	class:spot::option_map	typeref:typename:void
 repr_t	mining/a-team/libs/lib/spot/include/spot/misc/trival.hh	/^    typedef signed char repr_t;$/;"	t	class:spot::trival	typeref:typename:signed char
+request	simple_platform.srcs/assertions/bl_master_assertions.sv	/^checker MasterBusCheck(clk,reset,busy,request,wb_we,write,wb_adr,address, wb_dat_o,data_to_bus, /;"	p	checker:MasterBusCheck
 request	simple_platform.srcs/sources_1/new/buslayer_master.sv	/^    input  logic        request,$/;"	p	module:buslayer_master
 request	simple_platform.srcs/sources_1/new/buslayer_slave.sv	/^    output logic        request,$/;"	p	module:buslayer_slave
 request	simple_platform.srcs/sources_1/new/core_wrapper.v	/^reg        request;        \/\/ request is set to start a new bus transaction$/;"	r	task:core_wrapper.run_testbench
@@ -24319,6 +24340,8 @@ reset	mining/a-team/libs/lib/antlr4/include/runtime/Cpp/runtime/src/tree/ParseTr
 reset	mining/a-team/libs/lib/spot/include/spot/priv/robin_hood.hh	/^    void reset() noexcept {$/;"	f	class:robin_hood::detail::BulkPoolAllocator	typeref:typename:void
 reset	mining/a-team/libs/lib/spot/include/spot/twaalgos/ltl2tgba_fm.cc	/^      reset(bool mark_all)$/;"	f	class:spot::__anonebcb30e90111::ltl_trad_visitor	typeref:typename:void	file:
 reset	mining/a-team/libs/lib/spot/include/spot/twaalgos/stats.hh	/^    void reset()$/;"	f	class:spot::printable_scc_info	typeref:typename:void
+reset	simple_platform.srcs/assertions/bl_master_assertions.sv	/^checker MasterBusCheck(clk,reset,busy,request,wb_we,write,wb_adr,address, wb_dat_o,data_to_bus, /;"	p	checker:MasterBusCheck
+reset	simple_platform.srcs/assertions/wishbone_assertions.sv	/^checker BusCheck(clk, reset,wb_we_m, wb_cyc_m, wb_stb, wb_ack_s,wb_stall_s);$/;"	p	checker:BusCheck
 reset	simple_platform.srcs/sources_1/new/buslayer_master.sv	/^    output logic        reset,$/;"	p	module:buslayer_master
 reset	simple_platform.srcs/sources_1/new/buslayer_slave.sv	/^    output logic        reset,$/;"	p	module:buslayer_slave
 reset	simple_platform.srcs/sources_1/new/core_wrapper.v	/^reg        reset;          \/\/ $/;"	r	task:core_wrapper.run_testbench
@@ -26793,10 +26816,13 @@ wb_ack	simple_platform.srcs/sources_1/imports/new/wishbone_interface.sv	/^  logi
 wb_ack	simple_platform.srcs/sources_1/new/buslayer_master.sv	/^    input  logic        wb_ack,$/;"	p	module:buslayer_master
 wb_ack	simple_platform.srcs/sources_1/new/buslayer_slave.sv	/^    output logic        wb_ack,$/;"	p	module:buslayer_slave
 wb_ack	simple_platform.srcs/sources_1/new/core_wrapper.v	/^   input             wb_ack,$/;"	p	module:core_wrapper
+wb_ack_s	simple_platform.srcs/assertions/wishbone_assertions.sv	/^checker BusCheck(clk, reset,wb_we_m, wb_cyc_m, wb_stb, wb_ack_s,wb_stall_s);$/;"	p	checker:BusCheck
+wb_adr	simple_platform.srcs/assertions/bl_master_assertions.sv	/^checker MasterBusCheck(clk,reset,busy,request,wb_we,write,wb_adr,address, wb_dat_o,data_to_bus, /;"	p	checker:MasterBusCheck
 wb_adr	simple_platform.srcs/sources_1/imports/new/wishbone_interface.sv	/^  logic [31:0] wb_adr;$/;"	r	interface:wishbone_interface
 wb_adr	simple_platform.srcs/sources_1/new/buslayer_master.sv	/^    output logic [31:0] wb_adr,$/;"	p	module:buslayer_master
 wb_adr	simple_platform.srcs/sources_1/new/buslayer_slave.sv	/^    input  logic [31:0] wb_adr,$/;"	p	module:buslayer_slave
 wb_adr	simple_platform.srcs/sources_1/new/core_wrapper.v	/^   output  [31:0]    wb_adr,$/;"	p	module:core_wrapper
+wb_clk	simple_platform.srcs/assertions/camellia_assertions.sv	/^checker camellia_checker(wb_clk, Krdy, Kvld, EncDec, Drdy, Dvld);$/;"	p	checker:camellia_checker
 wb_clk	simple_platform.srcs/sources_1/imports/new/wishbone_interface.sv	/^interface wishbone_interface (input logic wb_clk, wb_rst);$/;"	p	interface:wishbone_interface
 wb_clk	simple_platform.srcs/sources_1/new/buslayer_master.sv	/^    input  logic        wb_clk,$/;"	p	module:buslayer_master
 wb_clk	simple_platform.srcs/sources_1/new/buslayer_slave.sv	/^    input  logic        wb_clk,$/;"	p	module:buslayer_slave
@@ -26805,10 +26831,12 @@ wb_cyc	simple_platform.srcs/sources_1/imports/new/wishbone_interface.sv	/^  logi
 wb_cyc	simple_platform.srcs/sources_1/new/buslayer_master.sv	/^    output logic        wb_cyc,$/;"	p	module:buslayer_master
 wb_cyc	simple_platform.srcs/sources_1/new/buslayer_slave.sv	/^    input  logic        wb_cyc,$/;"	p	module:buslayer_slave
 wb_cyc	simple_platform.srcs/sources_1/new/core_wrapper.v	/^   output            wb_cyc,$/;"	p	module:core_wrapper
+wb_cyc_m	simple_platform.srcs/assertions/wishbone_assertions.sv	/^checker BusCheck(clk, reset,wb_we_m, wb_cyc_m, wb_stb, wb_ack_s,wb_stall_s);$/;"	p	checker:BusCheck
 wb_dat_i	simple_platform.srcs/sources_1/imports/new/wishbone_interface.sv	/^  logic [31:0] wb_dat_i;$/;"	r	interface:wishbone_interface
 wb_dat_i	simple_platform.srcs/sources_1/new/buslayer_master.sv	/^    input  logic [31:0] wb_dat_i,$/;"	p	module:buslayer_master
 wb_dat_i	simple_platform.srcs/sources_1/new/buslayer_slave.sv	/^    input  logic [31:0] wb_dat_i,$/;"	p	module:buslayer_slave
 wb_dat_i	simple_platform.srcs/sources_1/new/core_wrapper.v	/^   input   [31:0]    wb_dat_i,$/;"	p	module:core_wrapper
+wb_dat_o	simple_platform.srcs/assertions/bl_master_assertions.sv	/^checker MasterBusCheck(clk,reset,busy,request,wb_we,write,wb_adr,address, wb_dat_o,data_to_bus, /;"	p	checker:MasterBusCheck
 wb_dat_o	simple_platform.srcs/sources_1/imports/new/wishbone_interface.sv	/^  logic [31:0] wb_dat_o;$/;"	r	interface:wishbone_interface
 wb_dat_o	simple_platform.srcs/sources_1/new/buslayer_master.sv	/^    output logic [31:0] wb_dat_o,$/;"	p	module:buslayer_master
 wb_dat_o	simple_platform.srcs/sources_1/new/buslayer_slave.sv	/^    output logic [31:0] wb_dat_o,$/;"	p	module:buslayer_slave
@@ -26825,6 +26853,7 @@ wb_rst	simple_platform.srcs/sources_1/imports/new/wishbone_interface.sv	/^interf
 wb_rst	simple_platform.srcs/sources_1/new/buslayer_master.sv	/^    input  logic        wb_rst,$/;"	p	module:buslayer_master
 wb_rst	simple_platform.srcs/sources_1/new/buslayer_slave.sv	/^    input  logic        wb_rst,$/;"	p	module:buslayer_slave
 wb_rst	simple_platform.srcs/sources_1/new/core_wrapper.v	/^   input             wb_rst,$/;"	p	module:core_wrapper
+wb_sel	simple_platform.srcs/assertions/bl_master_assertions.sv	/^checker MasterBusCheck(clk,reset,busy,request,wb_we,write,wb_adr,address, wb_dat_o,data_to_bus, /;"	p	checker:MasterBusCheck
 wb_sel	simple_platform.srcs/sources_1/imports/new/wishbone_interface.sv	/^  logic [3:0]  wb_sel;$/;"	r	interface:wishbone_interface
 wb_sel	simple_platform.srcs/sources_1/new/buslayer_master.sv	/^    output logic [3:0]  wb_sel,$/;"	p	module:buslayer_master
 wb_sel	simple_platform.srcs/sources_1/new/buslayer_slave.sv	/^    input  logic [3:0]  wb_sel,$/;"	p	module:buslayer_slave
@@ -26833,14 +26862,18 @@ wb_stall	simple_platform.srcs/sources_1/imports/new/wishbone_interface.sv	/^  lo
 wb_stall	simple_platform.srcs/sources_1/new/buslayer_master.sv	/^    input  logic        wb_stall,$/;"	p	module:buslayer_master
 wb_stall	simple_platform.srcs/sources_1/new/buslayer_slave.sv	/^    output logic        wb_stall,$/;"	p	module:buslayer_slave
 wb_stall	simple_platform.srcs/sources_1/new/core_wrapper.v	/^   input             wb_stall,$/;"	p	module:core_wrapper
+wb_stall_s	simple_platform.srcs/assertions/wishbone_assertions.sv	/^checker BusCheck(clk, reset,wb_we_m, wb_cyc_m, wb_stb, wb_ack_s,wb_stall_s);$/;"	p	checker:BusCheck
+wb_stb	simple_platform.srcs/assertions/wishbone_assertions.sv	/^checker BusCheck(clk, reset,wb_we_m, wb_cyc_m, wb_stb, wb_ack_s,wb_stall_s);$/;"	p	checker:BusCheck
 wb_stb	simple_platform.srcs/sources_1/imports/new/wishbone_interface.sv	/^  logic        wb_stb;$/;"	r	interface:wishbone_interface
 wb_stb	simple_platform.srcs/sources_1/new/buslayer_master.sv	/^    output logic        wb_stb,$/;"	p	module:buslayer_master
 wb_stb	simple_platform.srcs/sources_1/new/buslayer_slave.sv	/^    input  logic        wb_stb,$/;"	p	module:buslayer_slave
 wb_stb	simple_platform.srcs/sources_1/new/core_wrapper.v	/^   output            wb_stb,$/;"	p	module:core_wrapper
+wb_we	simple_platform.srcs/assertions/bl_master_assertions.sv	/^checker MasterBusCheck(clk,reset,busy,request,wb_we,write,wb_adr,address, wb_dat_o,data_to_bus, /;"	p	checker:MasterBusCheck
 wb_we	simple_platform.srcs/sources_1/imports/new/wishbone_interface.sv	/^  logic        wb_we;$/;"	r	interface:wishbone_interface
 wb_we	simple_platform.srcs/sources_1/new/buslayer_master.sv	/^    output logic        wb_we,$/;"	p	module:buslayer_master
 wb_we	simple_platform.srcs/sources_1/new/buslayer_slave.sv	/^    input  logic        wb_we,$/;"	p	module:buslayer_slave
 wb_we	simple_platform.srcs/sources_1/new/core_wrapper.v	/^   output            wb_we,$/;"	p	module:core_wrapper
+wb_we_m	simple_platform.srcs/assertions/wishbone_assertions.sv	/^checker BusCheck(clk, reset,wb_we_m, wb_cyc_m, wb_stb, wb_ack_s,wb_stall_s);$/;"	p	checker:BusCheck
 wb_write	firmware/driver/buslayer_master.h	/^char wb_write(int *address, uint data, uint byteSel) {$/;"	f	typeref:typename:char
 wb_writeByte	firmware/driver/buslayer_master.h	/^char wb_writeByte(char *address, unsigned char data) {$/;"	f	typeref:typename:char
 wb_writeInt	firmware/driver/buslayer_master.h	/^char wb_writeInt(int *address, unsigned int data) {$/;"	f	typeref:typename:char
@@ -26870,6 +26903,7 @@ word_parse_error	mining/a-team/libs/lib/spot/include/spot/twaalgos/word.cc	/^   
 word_t	mining/a-team/libs/lib/spot/include/spot/misc/bitset.hh	/^    using word_t = unsigned;$/;"	t	class:spot::bitset	typeref:typename:unsigned
 wrap_simul	mining/a-team/libs/lib/spot/include/spot/twaalgos/simulation.cc	/^    wrap_simul(Fun f, const Aut& a)$/;"	f	namespace:spot::__anon788113400111	typeref:typename:twa_graph_ptr
 wring_kw	mining/a-team/libs/lib/spot/include/spot/tl/print.cc	/^    const char* wring_kw[] = {$/;"	v	namespace:spot::__anonb3737ea60111	typeref:typename:const char * []
+write	simple_platform.srcs/assertions/bl_master_assertions.sv	/^checker MasterBusCheck(clk,reset,busy,request,wb_we,write,wb_adr,address, wb_dat_o,data_to_bus, /;"	p	checker:MasterBusCheck
 write	simple_platform.srcs/sources_1/new/buslayer_master.sv	/^    input  logic        write,$/;"	p	module:buslayer_master
 write	simple_platform.srcs/sources_1/new/buslayer_slave.sv	/^    output logic        write,$/;"	p	module:buslayer_slave
 write	simple_platform.srcs/sources_1/new/core_wrapper.v	/^reg        write;          \/\/ operation: write=1 (write) write=0 (read)$/;"	r	task:core_wrapper.run_testbench

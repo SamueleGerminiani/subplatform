@@ -1,7 +1,7 @@
-# vsim -quiet -suppress vopt-13314,vsim-4075 -c sim1 -do "file.cmds" 
-# Start time: 09:52:32 on Jan 25,2020
-# ** Note: (vsim-8009) Loading existing optimized design _opt
-# //  ModelSim SE-64 2019.4 Oct 15 2019 Linux 5.3.0-26-generic
+# vsim -modelsimini ../modelsim.ini -quiet -suppress vopt-13314,vsim-4075 -c sim1 -do "assertion fail -r / sim1; run 1ms;                                   assertion report -failed -r sim1 -file fault_report.txt;   				   exit" 
+# Start time: 13:59:45 on Jan 13,2021
+# ** Note: (vsim-3812) Design is being optimized...
+# //  ModelSim SE-64 2019.4 Oct 15 2019 Linux 5.4.0-59-generic
 # //
 # //  Copyright 1991-2019 Mentor Graphics Corporation
 # //  All Rights Reserved.
@@ -14,12 +14,13 @@
 # //  is prohibited from disclosure under the Trade Secrets Act,
 # //  18 U.S.C. Section 1905.
 # //
-# ** Note: (vsim-7082) For C/C++ auto compile, choosing compiler /usr/bin/gcc set from the PATH environment variable.
-# do file.cmds
-# ** Error: Assertion error.
-#    Time: 55 ns Started: 35 ns  Scope: sim1.p.core.master_interface.masterBus_checker_instance File: ../simple_platform.srcs/assertions/bl_master_assertions.sv Line: 40
+# ** Note: (vsim-7082) For C/C++ auto compile, choosing compiler /usr/bin/gcc set by the DpiCppPath modelsim.ini variable.
+# assertion fail -r / sim1
+#  run 1ms
+#                                    assertion report -failed -r sim1 -file fault_report.txt
+#    				   exit
 #           2
-# transaction_count:         59
+# transaction_count:      14647
 # 
-# End time: 09:52:34 on Jan 25,2020, Elapsed time: 0:00:02
-# Errors: 1, Warnings: 0
+# End time: 13:59:49 on Jan 13,2021, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 0, Suppressed Warnings: 4

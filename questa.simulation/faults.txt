@@ -1,4 +1,0 @@
-sim1.p.core.master_interface.busy 1'b0
-sim1.p.core.master_interface.wb_adr 1'b0
-sim1.p.core.master_interface.wb_dat_o 1'b0
-sim1.p.core.master_interface.wb_sel(0) 1'b0

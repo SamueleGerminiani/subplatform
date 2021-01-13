@@ -5,22 +5,26 @@ checker camellia_checker(wb_clk, Krdy, Kvld, EncDec, Drdy, Dvld);
 
         //Load a Key
 		property p0;
-		  !(Krdy) ##1 (Krdy) |-> nexttime[7](Kvld);
+		'b1
+		//Complete here
 		endproperty
 
         //Common behavior encode/decode
 		property p1;
-		  !(Drdy) ##1 (Drdy) |-> nexttime[24](Dvld);
+		'b1
+		//Complete here
 		endproperty
 
         //Encode a word
 		property p2;
-		  !(Drdy && EncDec) ##1 (Drdy && EncDec) |-> nexttime[1]((EncDec and nexttime[23](Dvld)));
+		'b1
+		//Complete here
 		endproperty
 
         //Decode a word
 		property p3;
-		  !(Drdy && !EncDec) ##1 (Drdy && !EncDec) |-> nexttime[1]((!EncDec and nexttime[23](Dvld)));
+		'b1
+		//Complete here
 		endproperty
 
 

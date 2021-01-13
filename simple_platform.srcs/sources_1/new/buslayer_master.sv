@@ -104,7 +104,8 @@ end
 always_comb begin
     // in any state...
     reset          = wb_rst;   
-    busy           = (state != IDLE);
+    //FIXME
+    busy           = (state != IDLE && 'b0);
     ready_from_bus = (state == REQUEST || state == WAIT_ACK)? wb_ack : 1'b0;
     error_from_bus = (state == REQUEST || state == WAIT_ACK)? wb_err : 1'b0;
     data_from_bus  = (wb_rst == 1'b0)? wb_dat_i : 32'b0;
