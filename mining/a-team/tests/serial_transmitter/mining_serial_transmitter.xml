@@ -10,6 +10,7 @@
 
     <coneminer name="manualDefinition">
         <coneOfInfluence name="cone1">
+		<!-- data_to_send[7:0] logic 8, done bool, next_state[3:0] logic 4, rst bool, send bool, state[3:0] logic 4, val bool -->
             <atomicPropositions>
                 <atomicProposition formula="state[3:0] == nexttime[1](next_state[3:0])"   dir="inout" />
                 <atomicProposition formula="send"   dir="inout" />

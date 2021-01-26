@@ -7,11 +7,16 @@
             <convertSingleBitLogicToBool value="Yes"/>
         </vcdParserConfig>
     </tracereader>
-
+    <!--
+    Use only the following Boolean variables: wb_err wb_rst wb_stall wb_stb wb_we wb_ack wb_cyc busy write error_from_bus ready_from_bus request reset  
+    -->
     <coneminer name="manualDefinition">
-        <coneOfInfluence name="Es1_2_assertions">
+        <coneOfInfluence name="cone1">
             <atomicPropositions>
-                <atomicProposition formula="busy"   dir="inout" />
+                <atomicProposition formula="busy && !write" dir="inout"/>
+		    <!--
+		      Add propositions here
+		    -->
             </atomicPropositions>
         </coneOfInfluence>
     </coneminer>
@@ -31,6 +36,9 @@
     <propositionminer name="TBMiner">
         <ConsequentTemplates>
                     <template value="Xp2"/>
+		    <!--
+		      Add templates here
+		    -->
          </ConsequentTemplates>
     </propositionminer>
 

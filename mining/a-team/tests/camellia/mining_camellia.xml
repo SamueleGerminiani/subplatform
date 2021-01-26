@@ -8,10 +8,16 @@
         </vcdParserConfig>
     </tracereader>
 
+    <!--
+    Use only the following Boolean variables: BSY Drdy Dvld EN EncDec Krdy Kvld RSTn 
+    -->
     <coneminer name="manualDefinition">
         <coneOfInfluence name="cone1">
             <atomicPropositions>
                 <atomicProposition formula="BSY"   dir="inout" />
+		    <!--
+		      Add propositions here
+		    -->
             </atomicPropositions>
         </coneOfInfluence>
     </coneminer>
@@ -31,6 +37,9 @@
     <propositionminer name="TBMiner">
         <ConsequentTemplates>
             <template value="X(p2)"/>
+		    <!--
+		      Add templates here
+		    -->
          </ConsequentTemplates>
     </propositionminer>
 
@@ -39,7 +48,7 @@
     </propertyminer>
 
     <propertyprinter name="sva">
-        <generateChecker value="Yes" name="camellia"/>
+        <generateChecker value="No" name="camellia"/>
     </propertyprinter>
 
 </root>
