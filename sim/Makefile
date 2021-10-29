@@ -36,6 +36,7 @@ clean:
 	@echo ===========================================================================
 	@find . -maxdepth 1 ! -name 'Makefile' -type f -exec rm -f {} +
 	@find . -maxdepth 1 ! -name 'tools' ! -name '.' -type d -exec rm -rf {} +
+	@mkdir vcd
 
 compile_s:
 	@echo ===========================================================================

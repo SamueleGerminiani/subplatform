@@ -31,11 +31,9 @@ simple_platform p();
 // VCD traces
 //================================================================================
 initial begin
-`ifdef TRACE_DEBUG
-    $dumpfile("sim.vcd");
+    $fdumpfile("vcd/sim.vcd");
     $dumpvars(0, p);
-`elsif TRACE_WB_MASTER
-    $dumpfile("bl_master.vcd");
+    $fdumpfile("vcd/bl_master.vcd");
     $dumpvars(1, p.core.master_interface.wb_clk,
                  p.core.master_interface.wb_rst,
                  p.core.master_interface.wb_cyc,
@@ -58,8 +56,7 @@ initial begin
                  p.core.master_interface.error_from_bus,
                  p.core.master_interface.data_to_bus,
                  p.core.master_interface.data_from_bus); 
-`elsif TRACE_WB_SLAVE_0
-    $dumpfile("bl_slave.vcd");
+    $fdumpfile("vcd/bl_slave0.vcd");
     $dumpvars(1, p.slave_0.slave_interface.wb_clk,
                  p.slave_0.slave_interface.wb_rst,
                  p.slave_0.slave_interface.wb_cyc,
@@ -81,8 +78,7 @@ initial begin
                  p.slave_0.slave_interface.data_to_bus,
                  p.slave_0.slave_interface.done,
                  p.slave_0.slave_interface.err);
-`elsif TRACE_WB_SLAVE_1
-     $dumpfile("bl_slave.vcd");
+     $fdumpfile("vcd/bl_slave1.vcd");
     $dumpvars(1, p.slave_1.slave_interface.wb_clk,
                  p.slave_1.slave_interface.wb_rst,
                  p.slave_1.slave_interface.wb_cyc,
@@ -104,8 +100,7 @@ initial begin
                  p.slave_1.slave_interface.data_to_bus,
                  p.slave_1.slave_interface.done,
                  p.slave_1.slave_interface.err);
-`elsif CAMELLIA
-    $dumpfile("camellia.vcd");
+    $fdumpfile("vcd/camellia.vcd");
     $dumpvars(1, p.slave_0.slave_interface.wb_clk,
                  p.slave_0.camallia_u.RSTn,
                  p.slave_0.camallia_u.EN,
@@ -115,8 +110,7 @@ initial begin
                  p.slave_0.camallia_u.BSY,
                  p.slave_0.camallia_u.Kvld,
                  p.slave_0.camallia_u.Dvld);
- `elsif SERIAL_TRANSMITTER
-    $dumpfile("serial_transmitter.vcd");
+    $fdumpfile("vcd/serial_transmitter.vcd");
     $dumpvars(1, p.slave_1.slave_interface.wb_clk,
                  p.slave_1.transmitter.rst,
                  p.slave_1.transmitter.data_to_send,
@@ -125,7 +119,6 @@ initial begin
                  p.slave_1.transmitter.state,
                  p.slave_1.transmitter.next_state,
                  p.slave_1.transmitter.val);
- `endif
 end
 //--------------------------------------------------------------------------------
 
