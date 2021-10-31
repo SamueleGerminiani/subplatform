@@ -19,6 +19,9 @@ help:
 	@echo  " --- RECIPES ---------------------------------------------------------------------------"
 	@echo  " simulation             => Performs: clean, compile_s, and run_s        			   "
 	@echo  " ABV                    => Performs: clean, and Assertion-based Verification           "
+	@echo  " faultC_bl_master       => Performs: clean, and fault coverage for buslayer (master)   "
+	@echo  " faultC_camellia        => Performs: clean, and fault coverage for camellia            "
+	@echo  " faultC_wishbone        => Performs: clean, and fault coverage for transmitter         "
 	@echo  " --- TARGETS ---------------------------------------------------------------------------"
 	@echo  " check_faults           => Performs: fault-coverage with faults.txt file               "
 	@echo  " compile_s              => Compilings DUT                                              "
@@ -87,9 +90,33 @@ run_ABV:
 	@echo " Simulation - END                                                        "
 	@echo ===========================================================================
 
+copy_fl:
+	@cp $(FAULTS_LIST) ./faults.txt
+
+check_faults:
+	@echo ===========================================================================
+	@echo " Fault coverage - START                                                  "
+	@echo ===========================================================================
+	@bash ./tools/check_faults.sh
+	@echo ===========================================================================
+	@echo " Fault coverage - END                                                    "
+	@echo ===========================================================================
+
 simulation: DEFINE_TRACE=+define+TRACE_DEBUG
 simulation: clean compile_s run_s
 
+
+faultC_bl_master: FAULTS_LIST=../faults/bl_master_faults.txt
+faultC_bl_master: SVA=$(SRC)/assertions/bl_master_assertions.sv
+faultC_bl_master: clean compile_ABV copy_fl check_faults
+
+faultC_wishbone: FAULTS_LIST=../faults/wishbone_faults.txt
+faultC_wishbone: SVA=$(SRC)/assertions/wishbone_assertions.sv
+faultC_wishbone: clean compile_ABV copy_fl check_faults
+
+faultC_camellia: FAULTS_LIST=../faults/camellia_faults.txt
+faultC_camellia: SVA=$(SRC)/assertions/camellia_assertions.sv
+faultC_camellia: clean compile_ABV copy_fl check_faults
 
 
 

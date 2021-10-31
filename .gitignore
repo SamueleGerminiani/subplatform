@@ -1,3 +1,4 @@
 sim/work/*
 sim/work
 sim/vcd/*
+sim/dump.vcd

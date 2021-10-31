@@ -1,0 +1,4 @@
+sim1.p.core.master_interface.<item> <value>
+sim1.p.core.master_interface.<item> <value>
+sim1.p.core.master_interface.<item> <value>
+sim1.p.core.master_interface.<item> <value>

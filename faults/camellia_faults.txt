@@ -1,0 +1,2 @@
+sim1.p.slave_0.camallia_u.<item> <value>
+sim1.p.slave_0.camallia_u.<item> <value>
