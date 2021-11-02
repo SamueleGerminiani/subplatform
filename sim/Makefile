@@ -59,7 +59,7 @@ run_s:
 	@echo " Simulation - START                                                      "
 	@echo ===========================================================================
 	@vsim -quiet -suppress vopt-13314,vsim-4075                                     \
-		  -c sim1 -do "run 1ms; exit"
+		  -c sim1 -do "run 10000ns; exit"
 	@echo ===========================================================================
 	@echo " Simulation - END                                                        "
 	@echo ===========================================================================
@@ -82,7 +82,7 @@ run_ABV:
 	@echo " Simulation - START                                                      "
 	@echo ===========================================================================
 	@vsim -quiet -suppress vopt-13314,vsim-4075                                   \
-	      -c sim1 -do "assertion fail -r / sim1; run 1ms;                \
+	      -c sim1 -do "assertion fail -r / sim1; run 10000ns;                \
 	                   assertion report -failed -r sim1 -file fault_report.txt;   \
 					   exit"
 	@cat fault_report.txt
